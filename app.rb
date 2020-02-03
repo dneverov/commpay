@@ -18,19 +18,20 @@ Tariffs = {
 
 @previous_modifier = -39
 
+def in_currency(value)
+  format("%.2f", value)
+end
+
 def calculate
   total = 0
-  # calc = 0
   @values.each do |k,v|
-    # puts "k: #{k}"
-    # puts "v: #{v}"
     calc = v * Tariffs[k]
-    puts "#{k}: #{calc}"
+    puts "#{k}: #{in_currency calc}"
     total += calc
   end
   
-  puts "----------\nSubotal: #{total}"
-  puts "Total:   #{total+@previous_modifier}"
+  puts "----------\nSubotal: #{ in_currency total }"
+  puts "Total:   #{ in_currency(total+@previous_modifier) }"
 end
 
 calculate
