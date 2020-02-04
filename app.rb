@@ -30,22 +30,36 @@ class Billing
   end
 
   def calculate
-    puts "## #{name} ##"
+    puts "# #{name} #"
+    puts hr
     total = 0
     @values.each do |k,v|
       calc = v * Tariffs[k]
-      puts "#{k}: #{in_currency calc}"
+      puts formatted_float(k, calc)
       total += calc
     end
 
-    puts "----------\nSubotal: #{ in_currency total }"
-    puts "Total:   #{ in_currency(total+modifier) }"
+    puts hr
+    puts formatted_total("Subtotal", total)
+    puts formatted_total("Total", total+modifier)
   end
 
   private
 
+    def hr(w=24)
+      "-" * w
+    end
+
     def in_currency(value)
       format("%.2f", value)
+    end
+
+    def formatted_float(key, value, options = {:delimeter => "|"})
+      format(" %-11s #{options[:delimeter]} %8.2f", key, value)
+    end
+
+    def formatted_total(key, value)
+      formatted_float(key, value, delimeter: ' ')
     end
 end
 
