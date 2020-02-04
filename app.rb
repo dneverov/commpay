@@ -50,6 +50,7 @@ class Billing
       "-" * w
     end
 
+    # TODO: remove (unused)
     def in_currency(value)
       format("%.2f", value)
     end
