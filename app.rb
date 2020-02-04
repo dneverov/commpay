@@ -18,23 +18,43 @@ Tariffs = {
 
 @previous_modifier = -39
 
-def in_currency(value)
-  format("%.2f", value)
-end
 
-def calculate
-  total = 0
-  @values.each do |k,v|
-    calc = v * Tariffs[k]
-    puts "#{k}: #{in_currency calc}"
-    total += calc
+class Billing
+  attr_accessor :name, :modifier
+
+  def initialize(tariffs, values)
+    @name = "Unknown"
+    @modifier = 0
+    @tariffs = tariffs
+    @values = values
   end
-  
-  puts "----------\nSubotal: #{ in_currency total }"
-  puts "Total:   #{ in_currency(total+@previous_modifier) }"
+
+  def calculate
+    puts "## #{name} ##"
+    total = 0
+    @values.each do |k,v|
+      calc = v * Tariffs[k]
+      puts "#{k}: #{in_currency calc}"
+      total += calc
+    end
+
+    puts "----------\nSubotal: #{ in_currency total }"
+    puts "Total:   #{ in_currency(total+modifier) }"
+  end
+
+  private
+
+    def in_currency(value)
+      format("%.2f", value)
+    end
 end
 
-calculate
+
+# The main App
+billing = Billing.new(@tariffs, @values)
+billing.name = "January 2020 Billing"
+billing.modifier = @previous_modifier
+billing.calculate
 
 # water_cold: 202.39999999999998
 # water_hot: 594.5699999999999
