@@ -9,14 +9,14 @@ Tariffs = {
 
 # vars
 @values = {
-  water_cold: 5, #794
-  water_hot: 3, #536
-  energy: 105, #5546
+  water_cold: 5, #794, 799
+  water_hot: 3, #536,  539
+  energy: 103, #5546, 5649
   gas: 1,
   phone: 1
 }
 
-@previous_modifier = -39
+@previous_modifier = -11 #-39
 
 def in_currency(value)
   format("%.2f", value)
@@ -36,6 +36,7 @@ end
 
 calculate
 
+#   January 2020
 # water_cold: 202.39999999999998
 # water_hot: 594.5699999999999
 # energy: 574.35
@@ -44,3 +45,13 @@ calculate
 # ----------
 # Subotal: 1428.01
 # Total:   1389.01
+
+#  February 2020
+# water_cold: 202.40
+# water_hot: 594.57
+# energy: 563.41
+# gas: 56.69
+# phone: 0.00
+# ----------
+# Subotal: 1417.07
+# Total:   1406.07
