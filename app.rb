@@ -16,6 +16,8 @@ Tariffs = {
   phone: 0
 }
 
+OutputWidth = 24
+
 @previous_modifier = 6 #-39, -11
 
 
@@ -30,7 +32,7 @@ class Billing
   end
 
   def calculate
-    puts "# #{name} #"
+    puts "##{name.center(OutputWidth-2)}#"
     puts hr
     total = 0
     @values.each do |k,v|
@@ -46,14 +48,14 @@ class Billing
 
   private
 
-    def hr(w=24)
+    def hr(w=OutputWidth)
       "-" * w
     end
 
     # TODO: remove (unused)
-    def in_currency(value)
-      format("%.2f", value)
-    end
+    # def in_currency(value)
+    #   format("%.2f", value)
+    # end
 
     def formatted_float(key, value, options = {:delimeter => "|"})
       format(" %-11s #{options[:delimeter]} %8.2f", key, value)
