@@ -64,7 +64,6 @@ class Billing
     end
 end
 
-
 # The main App
 billing = Billing.new(@tariffs, @values)
 billing.name = "March 2020 Billing"
