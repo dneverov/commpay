@@ -9,14 +9,14 @@ Tariffs = {
 
 # vars
 @values = {
-  water_cold: 5, #794, 799
-  water_hot: 3, #536,  539
-  energy: 103, #5546, 5649
+  water_cold: 6, #794, 799, 805
+  water_hot: 3, #536,  539, 542
+  energy: 91, #5546, 5649, 5740
   gas: 1,
   phone: 1
 }
 
-@previous_modifier = -11 #-39
+@previous_modifier = 6 #-39, -11
 
 def in_currency(value)
   format("%.2f", value)
@@ -29,7 +29,7 @@ def calculate
     puts "#{k}: #{in_currency calc}"
     total += calc
   end
-  
+
   puts "----------\nSubotal: #{ in_currency total }"
   puts "Total:   #{ in_currency(total+@previous_modifier) }"
 end
@@ -55,3 +55,13 @@ calculate
 # ----------
 # Subotal: 1417.07
 # Total:   1406.07
+
+#  March 2020
+# water_cold: 242.88
+# water_hot: 594.57
+# energy: 497.77
+# gas: 56.69
+# phone: 0.00
+# ----------
+# Subotal: 1391.91
+# Total:   1397.91 --> 1400
