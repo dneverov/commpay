@@ -1,3 +1,6 @@
+require 'yaml/store'
+require_relative 'lib/param'
+
 # Const
 Tariffs = {
   water_cold: 40.48,
@@ -20,12 +23,15 @@ OutputWidth = 24
 
 @previous_modifier = 6 #-39, -11
 
+@@billing_params = []
 
 class Billing
   attr_accessor :name, :modifier
+  attr_reader :subtotal, :total
 
   def initialize(tariffs, values)
-    @name = "Unknown"
+    @created_at = Time.now
+    @name = @created_at.strftime("%B %Y")
     @modifier = 0
     @tariffs = tariffs
     @values = values
@@ -34,16 +40,27 @@ class Billing
   def calculate
     puts "##{name.center(OutputWidth-2)}#"
     puts hr
-    total = 0
+    subtotal = 0
     @values.each do |k,v|
       calc = v * Tariffs[k]
       puts formatted_float(k, calc)
-      total += calc
+      subtotal += calc
+      # Do the same with Param
+      billing_param = Param.new(k, Tariffs[k])
+      billing_param.delta = v
+      billing_param.calculate
+      # billing_param.total = v * Tariffs[k]
+      @@billing_params << billing_param
+
     end
 
+    # Total
+    @subtotal = sprintf("%.2f", subtotal).to_f
+    @total = sprintf("%.2f", subtotal+modifier).to_f
+    # Render
     puts hr
-    puts formatted_total("Subtotal", total)
-    puts formatted_total("Total", total+modifier)
+    puts formatted_total("Subtotal", @subtotal)
+    puts formatted_total("Total", @total)
   end
 
   private
@@ -67,11 +84,38 @@ class Billing
 end
 
 # The main App
-billing = Billing.new(@tariffs, @values)
-billing.name = "March 2020 Billing"
+billing = Billing.new(Tariffs, @values)
+#billing.name = "March 2020 Billing"
 billing.modifier = @previous_modifier
 billing.calculate
 
+# Ask to Save to a File
+print "\nSave to file? (y/N): "
+save_file = gets.chomp
+
+if ['y', 'yes'].include?(save_file.downcase)
+  # Save the file
+  file_name = 'data/billings.yml'
+  yaml_store = YAML::Store.new(file_name)
+
+  yaml_store.transaction do
+    yaml_store["billing"] = billing
+  end
+  puts "Saved file: '#{file_name}'"
+
+  # Load from file by entry
+  yaml_store.transaction do
+    p yaml_store.roots
+    puts
+    p yaml_store.roots.last
+  end
+else
+  # Temporary show Params
+  puts "\n# Temporary show Params #\n"
+  @@billing_params.each do |b|
+    puts b.inspect
+  end
+end
 #   January 2020
 # water_cold: 202.39999999999998
 # water_hot: 594.5699999999999
