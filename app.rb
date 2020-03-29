@@ -1,5 +1,6 @@
-require 'yaml/store'
+# require 'yaml/store'
 require_relative 'lib/param'
+require_relative 'lib/billing_store'
 
 # Const
 Tariffs = {
@@ -10,6 +11,11 @@ Tariffs = {
   phone: 1 #unused
 }
 
+# To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
+# BindedId = nil
+
+OutputWidth = 24
+
 # vars
 @values = {
   water_cold: 6, #794, 799, 805
@@ -19,15 +25,13 @@ Tariffs = {
   phone: 0
 }
 
-OutputWidth = 24
-
 @previous_modifier = 6 #-39, -11
 
 @@billing_params = []
 
 class Billing
   attr_accessor :name, :modifier
-  attr_reader :subtotal, :total
+  attr_reader :subtotal, :total, :created_at
 
   def initialize(tariffs, values)
     @created_at = Time.now
@@ -96,19 +100,25 @@ save_file = gets.chomp
 if ['y', 'yes'].include?(save_file.downcase)
   # Save the file
   file_name = 'data/billings.yml'
-  yaml_store = YAML::Store.new(file_name)
+  billing_store = BillingStore.new(file_name)
 
-  yaml_store.transaction do
-    yaml_store["billing"] = billing
-  end
-  puts "Saved file: '#{file_name}'"
+  # # Set entity_id
+  # entity_id = BindedId || billing.created_at.strftime("%B_%Y").downcase
+
+  # yaml_store.transaction do
+  #   yaml_store[entity_id] = billing
+  # end
+  # puts "Saved file: '#{file_name}'"
+
+  billing_store.save(billing)
 
   # Load from file by entry
-  yaml_store.transaction do
-    p yaml_store.roots
-    puts
-    p yaml_store.roots.last
-  end
+  # billing_store.store.transaction do |bs|
+  #   p bs.roots
+  #   puts
+  #   p bs.roots.last
+  #   p bs[bs.roots.last]
+  # end
 else
   # Temporary show Params
   puts "\n# Temporary show Params #\n"
