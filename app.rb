@@ -1,4 +1,3 @@
-# require 'yaml/store'
 require_relative 'lib/param'
 require_relative 'lib/billing_store'
 
@@ -10,9 +9,6 @@ Tariffs = {
   gas: 56.69,
   phone: 1 #unused
 }
-
-# To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
-# BindedId = nil
 
 OutputWidth = 24
 
@@ -53,9 +49,7 @@ class Billing
       billing_param = Param.new(k, Tariffs[k])
       billing_param.delta = v
       billing_param.calculate
-      # billing_param.total = v * Tariffs[k]
       @@billing_params << billing_param
-
     end
 
     # Total
@@ -89,7 +83,6 @@ end
 
 # The main App
 billing = Billing.new(Tariffs, @values)
-#billing.name = "March 2020 Billing"
 billing.modifier = @previous_modifier
 billing.calculate
 
@@ -101,15 +94,6 @@ if ['y', 'yes'].include?(save_file.downcase)
   # Save the file
   file_name = 'data/billings.yml'
   billing_store = BillingStore.new(file_name)
-
-  # # Set entity_id
-  # entity_id = BindedId || billing.created_at.strftime("%B_%Y").downcase
-
-  # yaml_store.transaction do
-  #   yaml_store[entity_id] = billing
-  # end
-  # puts "Saved file: '#{file_name}'"
-
   billing_store.save(billing)
 
   # Load from file by entry
