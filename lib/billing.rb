@@ -2,19 +2,19 @@ class Billing
   attr_accessor :name, :modifier
   attr_reader :subtotal, :total, :created_at
 
-  def initialize(tariffs, values)
+  def initialize(tariffs, deltas)
     @created_at = Time.now
     @name = @created_at.strftime("%B %Y")
     @modifier = 0
     @tariffs = tariffs
-    @values = values
+    @deltas = deltas
   end
 
   def calculate
     puts "##{name.center(OutputWidth-2)}#"
     puts hr
     subtotal = 0
-    @values.each do |k,v|
+    @deltas.each do |k,v|
       calc = v * Tariffs[k]
       puts formatted_float(k, calc)
       subtotal += calc

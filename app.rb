@@ -14,7 +14,7 @@ Tariffs = {
 OutputWidth = 24
 
 # vars
-@values = {
+@deltas = {
   water_cold: 6, #794, 799, 805
   water_hot: 3, #536,  539, 542
   energy: 91, #5546, 5649, 5740
@@ -27,7 +27,7 @@ OutputWidth = 24
 @@billing_params = []
 
 # The main App
-billing = Billing.new(Tariffs, @values)
+billing = Billing.new(Tariffs, @deltas)
 billing.modifier = @previous_modifier
 billing.calculate
 
