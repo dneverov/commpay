@@ -8,6 +8,6 @@ class Param
   end
 
   def calculate
-    @total = delta * tariff
+    @total = sprintf("%.2f", delta * tariff).to_f
   end
 end

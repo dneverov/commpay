@@ -1,6 +1,7 @@
 require_relative 'lib/param'
 require_relative 'lib/billing'
 require_relative 'lib/billing_store'
+require_relative 'lib/render'
 
 # Const
 Tariffs = {
@@ -19,17 +20,19 @@ OutputWidth = 24
   water_hot: 3, #536,  539, 542
   energy: 91, #5546, 5649, 5740
   gas: 1,
-  phone: 0
+  phone: 0 #unused
 }
 
 @previous_modifier = 6 #-39, -11
-
-@@billing_params = []
 
 # The main App
 billing = Billing.new(Tariffs, @deltas)
 billing.modifier = @previous_modifier
 billing.calculate
+
+# Render
+console_render = Render.new()
+console_render.render(billing)
 
 # Ask to Save to a File
 print "\nSave to file? (y/N): "
@@ -51,7 +54,7 @@ if ['y', 'yes'].include?(save_file.downcase)
 else
   # Temporary show Params
   puts "\n# Temporary show Params #\n"
-  @@billing_params.each do |b|
+  billing.billing_params.each do |b|
     puts b.inspect
   end
 end
