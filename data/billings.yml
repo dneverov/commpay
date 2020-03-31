@@ -5,14 +5,14 @@ billing: !ruby/object:Billing
   created_at: 2020-03-29 02:07:56.645034651 +03:00
   name: March 2020
   modifier: 6
+  subtotal: 1391.91
+  total: 1397.91
   tariffs:
     :water_cold: 40.48
     :water_hot: 198.19
     :energy: 5.47
     :gas: 56.69
     :phone: 1
-  subtotal: 1391.91
-  total: 1397.91
   values:
     :water_cold: 6
     :water_hot: 3
@@ -23,14 +23,14 @@ sutramudra: !ruby/object:Billing
   created_at: 2020-03-29 02:23:05.860486273 +03:00
   name: March 2020
   modifier: 6
+  subtotal: 1391.91
+  total: 1397.91
   tariffs:
     :water_cold: 40.48
     :water_hot: 198.19
     :energy: 5.47
     :gas: 56.69
     :phone: 1
-  subtotal: 1391.91
-  total: 1397.91
   values:
     :water_cold: 6
     :water_hot: 3
@@ -41,14 +41,14 @@ march 2020: !ruby/object:Billing
   created_at: 2020-03-29 02:27:03.937396993 +03:00
   name: March 2020
   modifier: 6
+  subtotal: 1391.91
+  total: 1397.91
   tariffs:
     :water_cold: 40.48
     :water_hot: 198.19
     :energy: 5.47
     :gas: 56.69
     :phone: 1
-  subtotal: 1391.91
-  total: 1397.91
   values:
     :water_cold: 6
     :water_hot: 3
@@ -56,15 +56,9 @@ march 2020: !ruby/object:Billing
     :gas: 1
     :phone: 0
 march_2020: !ruby/object:Billing
-  created_at: 2020-03-30 04:45:53.793113477 +03:00
+  created_at: 2020-03-31 04:15:43.973020333 +03:00
   name: March 2020
   modifier: 6
-  tariffs:
-    :water_cold: 40.48
-    :water_hot: 198.19
-    :energy: 5.47
-    :gas: 56.69
-    :phone: 1
   deltas:
     :water_cold: 6
     :water_hot: 3
@@ -103,14 +97,14 @@ Linara: !ruby/object:Billing
   created_at: 2020-03-29 02:49:57.991330428 +03:00
   name: March 2020
   modifier: 6
+  subtotal: 1391.91
+  total: 1397.91
   tariffs:
     :water_cold: 40.48
     :water_hot: 198.19
     :energy: 5.47
     :gas: 56.69
     :phone: 1
-  subtotal: 1391.91
-  total: 1397.91
   values:
     :water_cold: 6
     :water_hot: 3

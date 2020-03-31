@@ -2,11 +2,10 @@ class Billing
   attr_accessor :name, :modifier
   attr_reader :subtotal, :total, :created_at, :billing_params
 
-  def initialize(tariffs, deltas)
+  def initialize(deltas)
     @created_at = Time.now
     @name = @created_at.strftime("%B %Y")
     @modifier = 0
-    @tariffs = tariffs
     @deltas = deltas
     @billing_params = []
   end

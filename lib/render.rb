@@ -1,6 +1,6 @@
 class Render
   def render(billing)
-    puts "#\e[33m#{billing.name.center(OutputWidth-2)}\e[0m#"
+    puts "\e[33m#{billing.name.center(OutputWidth)}\e[0m"
     puts hr
 
     billing.billing_params.each do |bp|

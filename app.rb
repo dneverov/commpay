@@ -26,7 +26,7 @@ OutputWidth = 24
 @previous_modifier = 6 #-39, -11
 
 # The main App
-billing = Billing.new(Tariffs, @deltas)
+billing = Billing.new(@deltas)
 billing.modifier = @previous_modifier
 billing.calculate
 
@@ -45,12 +45,11 @@ if ['y', 'yes'].include?(save_file.downcase)
   billing_store.save(billing)
 
   # Load from file by entry
-  # billing_store.store.transaction do |bs|
-  #   p bs.roots
-  #   puts
-  #   p bs.roots.last
-  #   p bs[bs.roots.last]
-  # end
+  # Temporary
+  puts "\n-- Load --\n"
+  billing_loaded = billing_store.load('march_2020')
+  console_render.render(billing_loaded)
+  puts "\n-- End: Load --\n"
 else
   # Temporary show Params
   puts "\n# Temporary show Params #\n"
