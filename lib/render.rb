@@ -1,4 +1,6 @@
 class Render
+  MinFloatWidth = 8
+
   def render(billing)
     puts "\e[33m#{billing.name.center(OutputWidth)}\e[0m"
     puts hr
@@ -19,7 +21,7 @@ class Render
     end
 
     def formatted_float(key, value, options = {:delimeter => "|"})
-      format(" %-11s #{options[:delimeter]} %8.2f", key, value)
+      format(" %-#{OutputWidth - MinFloatWidth - 5}s #{options[:delimeter]} %8.2f", key, value)
     end
 
     def formatted_total(key, value)

@@ -55,10 +55,10 @@ if ['y', 'yes'].include?(save_file.downcase)
   # puts "\n-- End: Load --\n"
 else
   # Temporary show Params
-  puts "\n# Temporary show Params #\n"
-  billing.billing_params.each do |b|
-    puts b.inspect
-  end
+  # puts "\n# Temporary show Params #\n"
+  # billing.billing_params.each do |b|
+  #   puts b.inspect
+  # end
 end
 #   January 2020
 # water_cold: 202.39999999999998
