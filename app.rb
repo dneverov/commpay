@@ -14,6 +14,9 @@ Tariffs = {
 
 OutputWidth = 24
 
+# To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
+BindedId = 'Linara'
+
 # vars
 @deltas = {
   water_cold: 6, #794, 799, 805
@@ -44,12 +47,12 @@ if ['y', 'yes'].include?(save_file.downcase)
   billing_store = BillingStore.new(file_name)
   billing_store.save(billing)
 
-  # Load from file by entry
-  # Temporary
-  puts "\n-- Load --\n"
-  billing_loaded = billing_store.load('march_2020')
-  console_render.render(billing_loaded)
-  puts "\n-- End: Load --\n"
+  # # Load from file by entry
+  # # Temporary
+  # puts "\n-- Load --\n"
+  # billing_loaded = billing_store.load('march_2020')
+  # console_render.render(billing_loaded)
+  # puts "\n-- End: Load --\n"
 else
   # Temporary show Params
   puts "\n# Temporary show Params #\n"

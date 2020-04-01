@@ -2,8 +2,6 @@ require 'yaml/store'
 
 class BillingStore
   attr_reader :original_file_name, :store
-  # To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
-  BindedId = nil
 
   def initialize(file_name)
     @store = YAML::Store.new(file_name)
