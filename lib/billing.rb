@@ -6,7 +6,7 @@ class Billing
 
   def initialize(deltas)
     @created_at = Time.now
-    @name = @created_at.strftime("%B %Y")
+    @name = BindedId || @created_at.strftime("%B %Y")
     @modifier = 0
     @@deltas = deltas
     @billing_params = []
