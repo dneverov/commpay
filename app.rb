@@ -15,7 +15,7 @@ Tariffs = {
 OutputWidth = 24
 
 # To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
-BindedId = 'Linara'
+BindedId = 'march_2020_apr'
 
 # vars
 @deltas = {
