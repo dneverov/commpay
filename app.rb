@@ -37,7 +37,15 @@ billing.calculate
 console_render = Render.new()
 console_render.render(billing)
 
+# Ask: how much to pay
+to_pay = console_render.ask_to_pay(billing)
+
+billing.calculate_next_modifier(to_pay)
+
+console_render.render_to_pay(billing)
+
 # Ask to Save to a File
+# TODO: Use something like: `if console_render.ask_to_save_file...`
 print "\nSave to file? (y/N): "
 save_file = gets.chomp
 
@@ -46,6 +54,7 @@ if ['y', 'yes'].include?(save_file.downcase)
   file_name = 'data/billings.yml'
   billing_store = BillingStore.new(file_name)
   billing_store.save(billing)
+  console_render.render_saved_file(billing_store.original_file_name)
 
   # # Load from file by entry
   # # Temporary

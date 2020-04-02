@@ -15,7 +15,6 @@ class BillingStore
     store.transaction do
       store[entity_id] = billing
     end
-    puts "Saved file: '#{original_file_name}'"
   end
 
   def load(entity_id = nil)

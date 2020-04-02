@@ -1,6 +1,6 @@
 class Billing
   attr_accessor :name, :modifier
-  attr_reader :subtotal, :total, :created_at, :billing_params
+  attr_reader :subtotal, :total, :straight_total, :created_at, :billing_params, :payment, :next_modifier
 
   @@deltas = nil
 
@@ -24,6 +24,12 @@ class Billing
 
     # Total
     @subtotal = sprintf("%.2f", subtotal).to_f
-    @total = sprintf("%.2f", subtotal+modifier).to_f
+    @straight_total = sprintf("%.2f", subtotal+modifier).to_f
+    @total = straight_total.round
+  end
+
+  def calculate_next_modifier(to_pay)
+    @payment = to_pay.to_i
+    @next_modifier = total - payment
   end
 end

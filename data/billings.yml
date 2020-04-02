@@ -94,7 +94,7 @@ march_2020: !ruby/object:Billing
     :gas: 1
     :phone: 0
 Linara: !ruby/object:Billing
-  created_at: 2020-04-02 02:18:57.584279524 +03:00
+  created_at: 2020-04-02 04:52:54.351670848 +03:00
   name: April 2020
   modifier: 6
   billing_params:
@@ -124,4 +124,7 @@ Linara: !ruby/object:Billing
     delta: 0
     total: 0.0
   subtotal: 1391.91
-  total: 1397.91
+  straight_total: 1397.91
+  total: 1398
+  payment: 1300
+  next_modifier: 98
