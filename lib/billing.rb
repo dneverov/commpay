@@ -15,8 +15,7 @@ class Billing
 
     previous_billing.billing_params.each do |p|
       k = p.name
-      billing_param = Param.new(k, Tariffs[k])
-      billing_param.value = @@values[k]
+      billing_param = Param.new(k, Tariffs[k], @@values[k])
       billing_param.delta = CalculatedParameters.include?(k.to_s) ? (billing_param.value - p.value) : p.value
       billing_params << billing_param
     end
