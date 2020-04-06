@@ -12,29 +12,56 @@ Tariffs = {
   phone: 1 #unused
 }
 
+CalculatedParameters = %w(water_cold water_hot energy)
+
 OutputWidth = 24
 
 # To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
 BindedId = 'march_2020_apr'
 
 # vars
-@deltas = {
-  water_cold: 6, #794, 799, 805
-  water_hot: 3, #536,  539, 542
-  energy: 91, #5546, 5649, 5740
+@values = { # March 2020
+  water_cold: 805, #794, 799, 805
+  water_hot: 542, #536,  539, 542
+  energy: 5740, #5546, 5649, 5740
   gas: 1,
   phone: 0 #unused
 }
 
-@previous_modifier = 6 #-39, -11
+# @deltas = { # March 2020
+#   water_cold: 6, #794, 799, 805
+#   water_hot: 3, #536,  539, 542
+#   energy: 91, #5546, 5649, 5740
+#   gas: 1,
+#   phone: 0 #unused
+# }
+
+# March
+# @previous_modifier = 6 #-39, -11
 
 # The main App
-billing = Billing.new(@deltas)
-billing.modifier = @previous_modifier
+file_name = 'data/billings.yml'
+billing_store = BillingStore.new(file_name)
+
+console_render = Render.new()
+
+# Load from file by entry
+# Temporary
+puts "CalculatedParameters: #{CalculatedParameters.inspect}"
+puts "\n-- Load --\n"
+billing_loaded = billing_store.load
+console_render.render(billing_loaded)
+console_render.render_to_pay(billing_loaded)
+puts "\n-- End: Load --\n"
+
+puts "\nprevious_mofifier = #{billing_loaded.next_modifier}\n\n"
+
+billing = Billing.new(@values)
+billing.modifier = billing_loaded.next_modifier
+billing.calculate_deltas(billing_loaded)
 billing.calculate
 
 # Render
-console_render = Render.new()
 console_render.render(billing)
 
 # Ask: how much to pay
@@ -51,17 +78,9 @@ save_file = gets.chomp
 
 if ['y', 'yes'].include?(save_file.downcase)
   # Save the file
-  file_name = 'data/billings.yml'
-  billing_store = BillingStore.new(file_name)
   billing_store.save(billing)
   console_render.render_saved_file(billing_store.original_file_name)
 
-  # # Load from file by entry
-  # # Temporary
-  # puts "\n-- Load --\n"
-  # billing_loaded = billing_store.load('march_2020')
-  # console_render.render(billing_loaded)
-  # puts "\n-- End: Load --\n"
 else
   # Temporary show Params
   # puts "\n# Temporary show Params #\n"
