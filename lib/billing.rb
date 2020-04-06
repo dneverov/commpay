@@ -10,23 +10,23 @@ class Billing
     @billing_params = []
   end
 
-  def calculate_deltas(previous_billing)
-    @@deltas = {}
+  def create_params(previous_billing)
+    @modifier = previous_billing.next_modifier
+
     previous_billing.billing_params.each do |p|
-      @@deltas[p.name] = CalculatedParameters.include?(p.name.to_s) ? (@@values[p.name] - p.value) : p.value
+      k = p.name
+      billing_param = Param.new(k, Tariffs[k])
+      billing_param.value = @@values[k]
+      billing_param.delta = CalculatedParameters.include?(k.to_s) ? (billing_param.value - p.value) : p.value
+      billing_params << billing_param
     end
-    puts "@@deltas = #{@@deltas.inspect}"
   end
 
   def calculate
     subtotal = 0
-    @@deltas.each do |k,v|
-      billing_param = Param.new(k, Tariffs[k])
-      billing_param.value = @@values[k]
-      billing_param.delta = v
-      billing_param.calculate
-      billing_params << billing_param
-      subtotal += billing_param.total
+    billing_params.each do |p|
+      p.calculate
+      subtotal += p.total
     end
 
     # Total

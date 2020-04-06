@@ -28,37 +28,20 @@ BindedId = 'march_2020_apr'
   phone: 0 #unused
 }
 
-# @deltas = { # March 2020
-#   water_cold: 6, #794, 799, 805
-#   water_hot: 3, #536,  539, 542
-#   energy: 91, #5546, 5649, 5740
-#   gas: 1,
-#   phone: 0 #unused
-# }
-
-# March
-# @previous_modifier = 6 #-39, -11
-
 # The main App
 file_name = 'data/billings.yml'
 billing_store = BillingStore.new(file_name)
 
-console_render = Render.new()
+console_render = Render.new
 
-# Load from file by entry
-# Temporary
-puts "CalculatedParameters: #{CalculatedParameters.inspect}"
-puts "\n-- Load --\n"
+# Load from file by entry (OR the last)
 billing_loaded = billing_store.load
 console_render.render(billing_loaded)
 console_render.render_to_pay(billing_loaded)
-puts "\n-- End: Load --\n"
-
-puts "\nprevious_mofifier = #{billing_loaded.next_modifier}\n\n"
+puts
 
 billing = Billing.new(@values)
-billing.modifier = billing_loaded.next_modifier
-billing.calculate_deltas(billing_loaded)
+billing.create_params(billing_loaded)
 billing.calculate
 
 # Render
@@ -80,14 +63,8 @@ if ['y', 'yes'].include?(save_file.downcase)
   # Save the file
   billing_store.save(billing)
   console_render.render_saved_file(billing_store.original_file_name)
-
-else
-  # Temporary show Params
-  # puts "\n# Temporary show Params #\n"
-  # billing.billing_params.each do |b|
-  #   puts b.inspect
-  # end
 end
+
 #   January 2020
 # water_cold: 202.39999999999998
 # water_hot: 594.5699999999999
