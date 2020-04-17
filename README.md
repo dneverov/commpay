@@ -20,7 +20,13 @@ Tariffs = {
 
 #### 2. Setup `BindedId` const:
 - `nil` (or comment out) -- for a new record;
-- `<some name>` *(Eg. 'march_2020')* -- to work with existent record (for testing purposes).
+- `<some name>` *(Eg. 'march_2020')* -- to work with existent _entity_ (for testing purposes).
+
+```ruby
+# To hard save with defined entity_id.
+#   E.g. 'march_2020'. Set =nil to disable
+BindedId = nil
+```
 
 #### 3. Define current `@variables`
 
