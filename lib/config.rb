@@ -1,7 +1,6 @@
 # Configuration file
 #   Constants, Configs etc.
 
-# Const
 Tariffs = {
   water_cold: 40.48,
   water_hot: 198.19,
@@ -15,10 +14,9 @@ CalculatedParameters = %w(water_cold water_hot energy)
 OutputWidth = 24
 
 # To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
-BindedId = 'march_2020_apr'
+BindedId = nil
 
-# vars
-# TODO: Load from a file
+# TODO: Load from file
 @values = { # March 2020
   water_cold: 805, #794, 799, 805
   water_hot: 542, #536,  539, 542

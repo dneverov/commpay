@@ -4,7 +4,7 @@ class Billing
 
   def initialize(values)
     @created_at = Time.now
-    @name = defined?(BindedId) ? BindedId : nil || @created_at.strftime("%B %Y")
+    @name = (defined?(BindedId) ? BindedId : nil) || @created_at.strftime("%B %Y")
     @modifier = 0
     @@values = values
     @billing_params = []
