@@ -32,6 +32,14 @@ class Render
     puts formatted_total("Mod", billing.next_modifier)
   end
 
+  def ask_to_save_file
+    positive_answers = %w(y yes hola)
+    print "\nSave to file? (y/N): "
+    save_file = gets.chomp
+
+    positive_answers.include?(save_file.downcase)
+  end
+
   def render_saved_file(file_name)
     print "\033[1ASaved file: \e[32m`#{file_name}`\e[0m\n"
   end

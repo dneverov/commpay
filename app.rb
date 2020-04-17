@@ -14,7 +14,6 @@ console_render = Render.new
 billing_loaded = billing_store.load
 console_render.render(billing_loaded)
 console_render.render_to_pay(billing_loaded)
-puts
 
 billing = Billing.new(@values)
 billing.create_params(billing_loaded)
@@ -31,12 +30,7 @@ billing.calculate_next_modifier(to_pay)
 console_render.render_to_pay(billing)
 
 # Ask to Save to a File
-# TODO: Use something like: `if console_render.ask_to_save_file...`
-print "\nSave to file? (y/N): "
-save_file = gets.chomp
-
-if ['y', 'yes'].include?(save_file.downcase)
-  # Save the file
+if console_render.ask_to_save_file
   billing_store.save(billing)
   console_render.render_saved_file(billing_store.original_file_name)
 end
