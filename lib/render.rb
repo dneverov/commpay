@@ -33,7 +33,7 @@ class Render
   end
 
   def ask_to_save_file
-    positive_answers = %w(y yes hola)
+    positive_answers = %w(y yes)
     print "\nSave to file? (y/N): "
     save_file = gets.chomp
 

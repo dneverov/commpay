@@ -7,7 +7,6 @@ require_relative 'lib/render'
 # The main App
 file_name = 'data/billings.yml'
 billing_store = BillingStore.new(file_name)
-
 console_render = Render.new
 
 # Load from file by entry (OR the last)
@@ -19,7 +18,6 @@ billing = Billing.new(@values)
 billing.create_params(billing_loaded)
 billing.calculate
 
-# Render
 console_render.render(billing)
 
 # Ask: how much to pay
