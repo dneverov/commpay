@@ -1,5 +1,5 @@
 class Billing
-  attr_accessor :name, :modifier
+  attr_accessor :name
   attr_reader :subtotal, :total, :straight_total, :created_at, :billing_params, :payment, :next_modifier
 
   @@instances = []
@@ -8,7 +8,6 @@ class Billing
   def initialize(values)
     @created_at = Time.now
     @name = (defined?(BindedId) ? BindedId : nil) || @created_at.strftime("%B %Y")
-    @modifier = 0
     @@values = values
     @billing_params ||= []
     @@instances << self
@@ -29,22 +28,19 @@ class Billing
   end
 
   def self.calculate_current
-    current = all.last
-
-    current.create_billing_params previous
-    current.calculate
-    current
+    all.last
+      .create_billing_params
+      .calculate
   end
 
-  def create_billing_params(previous_billing)
-    @modifier = previous_billing.next_modifier
-
-    previous_billing.billing_params.each do |p|
+  def create_billing_params
+    @@previous.billing_params.each do |p|
       k = p.name
       billing_param = Param.new(k, Tariffs[k], @@values[k])
       billing_param.delta = CalculatedParameters.include?(k.to_s) ? (billing_param.value - p.value) : p.value
       billing_params << billing_param
     end
+    self
   end
 
   def calculate
@@ -56,8 +52,9 @@ class Billing
 
     # Total
     @subtotal = sprintf("%.2f", subtotal).to_f
-    @straight_total = sprintf("%.2f", subtotal+modifier).to_f
+    @straight_total = sprintf("%.2f", subtotal + @@previous.next_modifier).to_f
     @total = straight_total.round
+    self
   end
 
   def calculate_next_modifier(to_pay)
