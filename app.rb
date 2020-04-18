@@ -9,14 +9,14 @@ file_name = 'data/billings.yml'
 billing_store = BillingStore.new(file_name)
 console_render = Render.new
 
-# Load from file by entry (OR the last)
-billing_loaded = billing_store.load
-console_render.render(billing_loaded)
-console_render.render_to_pay(billing_loaded)
+billings = Billing.load_all(billing_store)
+billing_previous = Billing.previous
+
+console_render.render(billing_previous)
+console_render.render_to_pay(billing_previous)
 
 billing = Billing.new(@values)
-billing.create_params(billing_loaded)
-billing.calculate
+Billing.calculate_current
 
 console_render.render(billing)
 

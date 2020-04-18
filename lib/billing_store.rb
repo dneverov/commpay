@@ -25,4 +25,12 @@ class BillingStore
       bs[entity_id]
     end
   end
+
+  def load_all
+    billings = []
+    entity_root = store.transaction do |bs|
+      bs.roots.each{ |entity| billings << bs[entity] }
+    end
+    billings
+  end
 end
