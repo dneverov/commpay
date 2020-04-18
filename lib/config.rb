@@ -15,12 +15,3 @@ OutputWidth = 24
 
 # To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
 BindedId = nil
-
-# TODO: Load from file
-@values = { # March 2020
-  water_cold: 805, #794, 799, 805
-  water_hot: 542, #536,  539, 542
-  energy: 5740, #5546, 5649, 5740
-  gas: 1,
-  phone: 0 #unused
-}

@@ -6,7 +6,7 @@ Just for Fun. (And for my personal convenience).
 
 ### Initial setup
 
-In the __lib/config.rb__ file:
+In the _lib/config.rb_ file:
 
 #### 1. Define Tariffs
 
@@ -28,14 +28,18 @@ Tariffs = {
 BindedId = nil
 ```
 
-#### 3. Define current `@variables`
+#### 3. Define current variables
 
-```ruby
-@values = {
-  water_cold: 805,
-  water_hot: 542,
-  ...
-}
+In the end of _data/values.yml_ file add your current values.  
+E.g.:
+
+```YAML
+march_2020_values:
+  water_cold: 805
+  water_hot: 542
+  energy: 5740
+  gas: 1
+  phone: 0
 ```
 
 ### Run App

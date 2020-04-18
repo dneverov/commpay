@@ -9,13 +9,18 @@ file_name = 'data/billings.yml'
 billing_store = BillingStore.new(file_name)
 console_render = Render.new
 
+# Load current values
+values_file_name = 'data/values.yml'
+values_store = BillingStore.new(values_file_name)
+current_values = values_store.load
+
 billings = Billing.load_all(billing_store)
 billing_previous = Billing.previous
 
 console_render.render(billing_previous)
 console_render.render_to_pay(billing_previous)
 
-billing = Billing.new(@values)
+billing = Billing.new(current_values)
 Billing.calculate_current
 
 console_render.render(billing)

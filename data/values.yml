@@ -1,0 +1,19 @@
+---
+dummy_january_2020_values:
+  water_cold: 794
+  water_hot: 536
+  energy: 5546
+  gas: 1
+  phone: 0
+dummy_february_2020_values:
+  water_cold: 799
+  water_hot: 539
+  energy: 5649
+  gas: 1
+  phone: 0
+march_2020_values:
+  water_cold: 805
+  water_hot: 542
+  energy: 5740
+  gas: 1
+  phone: 0

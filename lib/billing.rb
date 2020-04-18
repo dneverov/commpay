@@ -8,7 +8,7 @@ class Billing
   def initialize(values)
     @created_at = Time.now
     @name = (defined?(BindedId) ? BindedId : nil) || @created_at.strftime("%B %Y")
-    @@values = values
+    @@values = symbolize_keys(values)
     @billing_params ||= []
     @@instances << self
   end
@@ -61,4 +61,10 @@ class Billing
     @payment = to_pay.to_i
     @next_modifier = total - payment
   end
+
+  private
+
+    def symbolize_keys(hash)
+      hash.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
+    end
 end
