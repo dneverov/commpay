@@ -17,3 +17,9 @@ march_2020_values:
   energy: 5740
   gas: 1
   phone: 0
+april_2020_values:
+  water_cold: 810
+  water_hot: 545
+  energy: 5832
+  gas: 1
+  phone: 0

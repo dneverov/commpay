@@ -14,7 +14,7 @@ Tariffs = {
 CalculatedParameters = %w(water_cold water_hot energy)
 
 # To hard save with defined entity_id. E.g. 'march_2020'. Set =nil to disable
-BindedId = 'march_2020'
+BindedId = nil
 
 I18n.load_path << Dir[File.expand_path("config/locales") + "/*.yml"]
 I18n.default_locale = :en # (note that `en` is already the default!)
