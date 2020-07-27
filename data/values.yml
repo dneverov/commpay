@@ -35,3 +35,9 @@ june_2020_values:
   energy: 6010
   gas: 1
   phone: 0
+july_2020_values:
+  water_cold: 826
+  water_hot: 550
+  energy: 6100
+  gas: 1
+  phone: 0

@@ -235,3 +235,42 @@ june_2020: !ruby/object:Billing
   total: 1180
   payment: 1200
   next_modifier: -20
+july_2020: !ruby/object:Billing
+  created_at: 2020-07-27 23:30:32.038327016 +03:00
+  name: July 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 826
+    delta: 5
+    total: 202.4
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 550
+    delta: 1
+    total: 198.19
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 6100
+    delta: 90
+    total: 492.3
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 949.58
+  straight_total: 929.58
+  total: 930
+  payment: 900
+  next_modifier: 30
