@@ -3,11 +3,21 @@
 
 require 'i18n'
 
+# Tariffs = {
+#   water_cold: 40.48,
+#   water_hot: 198.19,
+#   energy: 5.47,
+#   gas: 56.69,
+#   phone: 1 #unused
+# }
+
+# August 2020
+
 Tariffs = {
-  water_cold: 40.48,
-  water_hot: 198.19,
-  energy: 5.47,
-  gas: 56.69,
+  water_cold: 42.30,
+  water_hot: 205.15,
+  energy: 5.66,
+  gas: 58.43,
   phone: 1 #unused
 }
 
