@@ -65,3 +65,9 @@ november_2020_values:
   energy: 6459
   gas: 1
   phone: 0
+december_2020_values:
+  water_cold: 860
+  water_hot: 564
+  energy: 6549
+  gas: 1
+  phone: 0
