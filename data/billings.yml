@@ -508,3 +508,42 @@ january_2021: !ruby/object:Billing
   total: 1274
   payment: 1300
   next_modifier: -26
+february_2021: !ruby/object:Billing
+  created_at: 2021-02-24 23:43:17.727269854 +03:00
+  name: February 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 872
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 569
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6746
+    delta: 95
+    total: 537.7
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1465.38
+  straight_total: 1439.38
+  total: 1439
+  payment: 1400
+  next_modifier: 39
