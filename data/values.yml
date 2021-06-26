@@ -101,4 +101,9 @@ may_2021_values:
   energy: 7003
   gas: 1
   phone: 0
-  # 1670 -- я оплатил за проверку счетчиков в Мае 2021. Итог: 1683-1670 = 13
+june_2021_values:
+  water_cold: 896
+  water_hot: 581
+  energy: 7082
+  gas: 1
+  phone: 0

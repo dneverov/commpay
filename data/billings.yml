@@ -662,5 +662,44 @@ may_2021: !ruby/object:Billing
   subtotal: 1667.55
   straight_total: 1682.55
   total: 1683
-  payment: 1670 # 1670 -- я оплатил за проверку счетчиков в Мае 2021. Итог: 1683-1670 = 13
+  payment: 1670
   next_modifier: 13
+june_2021: !ruby/object:Billing
+  created_at: 2021-06-27 00:15:38.555910860 +03:00
+  name: June 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 896
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 581
+    delta: 2
+    total: 410.3
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 7082
+    delta: 79
+    total: 447.14
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1169.67
+  straight_total: 1182.67
+  total: 1183
+  payment: 1200
+  next_modifier: -17
