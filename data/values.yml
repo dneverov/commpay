@@ -114,10 +114,6 @@ july_2021_values:
   gas: 1
   phone: 0
 august_2021_values:
-# Почему в data/billings.yml next_modifier: -940:
-# next_modifier: 34 - 974 = -940 (это 1/2 от суммы за шаровый и замену)
-# Шаровый Bugatti 3/4 = 598р., замена 1350р. = 1948р.
-#  1948/2 = 974р.
   water_cold: 909
   water_hot: 587
   energy: 7247
@@ -127,5 +123,11 @@ september_2021_values:
   water_cold: 913
   water_hot: 589
   energy: 7303
+  gas: 1
+  phone: 0
+october_2021_values:
+  water_cold: 918
+  water_hot: 592
+  energy: 7382
   gas: 1
   phone: 0
