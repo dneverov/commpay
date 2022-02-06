@@ -1,6 +1,6 @@
 ru:
   test: "Это тест"
-  output_width: 28
+  output_width: 32
   billing:
     water_cold:
       long: "Холодная вода"

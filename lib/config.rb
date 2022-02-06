@@ -41,3 +41,6 @@ I18n.default_locale = :en # (note that `en` is already the default!)
 I18n.locale = :ru
 
 OutputWidth = I18n.t(:output_width, default: 24)
+
+# Show the difference with the previous counters
+ShowDelta = true

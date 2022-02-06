@@ -7,7 +7,13 @@ class Render
     puts hr
 
     billing.billing_params.each do |bp|
-      puts formatted_float( I18n.t(:long, scope: [:billing, bp.name]), bp.total )
+      key = I18n.t(:long, scope: [:billing, bp.name])
+      billing_row = if ShowDelta
+        formatted_float_with_delta(key, bp.delta, bp.total)
+      else
+        formatted_float( key, bp.total )
+      end
+      puts billing_row
     end
 
     puts hr
@@ -54,6 +60,10 @@ class Render
 
     def formatted_float(key, value, options = {:delimeter => "|"})
       format(" %-#{OutputWidth - MinFloatWidth - 5}s #{options[:delimeter]} %8.2f", key, value)
+    end
+
+    def formatted_float_with_delta(key, delta, value, options = {:delimeter => "|"})
+      format(" %-#{OutputWidth - MinFloatWidth - 5 - 3 - 2 - 1}s #{options[:delimeter]} %3d #{options[:delimeter]} %8.2f", key, delta, value)
     end
 
     def formatted_total(key, value)
