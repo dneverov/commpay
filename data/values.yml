@@ -17,3 +17,135 @@ march_2020_values:
   energy: 5740
   gas: 1
   phone: 0
+april_2020_values:
+  water_cold: 810
+  water_hot: 545
+  energy: 5832
+  gas: 1
+  phone: 0
+may_2020_values:
+  water_cold: 815
+  water_hot: 547
+  energy: 5918
+  gas: 1
+  phone: 0
+june_2020_values:
+  water_cold: 821
+  water_hot: 549
+  energy: 6010
+  gas: 1
+  phone: 0
+july_2020_values:
+  water_cold: 826
+  water_hot: 550
+  energy: 6100
+  gas: 1
+  phone: 0
+august_2020_values:
+  water_cold: 831
+  water_hot: 552
+  energy: 6196
+  gas: 1
+  phone: 0
+september_2020_values:
+  water_cold: 837
+  water_hot: 555
+  energy: 6279
+  gas: 1
+  phone: 0
+october_2020_values:
+  water_cold: 846
+  water_hot: 558
+  energy: 6364
+  gas: 1
+  phone: 0
+november_2020_values:
+  water_cold: 855
+  water_hot: 561
+  energy: 6459
+  gas: 1
+  phone: 0
+december_2020_values:
+  water_cold: 860
+  water_hot: 564
+  energy: 6549
+  gas: 1
+  phone: 0
+january_2021_values:
+  water_cold: 866
+  water_hot: 566
+  energy: 6651
+  gas: 1
+  phone: 0
+february_2021_values:
+  water_cold: 872
+  water_hot: 569
+  energy: 6746
+  gas: 1
+  phone: 0
+march_2021_values:
+  water_cold: 878
+  water_hot: 572
+  energy: 6834
+  gas: 1
+  phone: 0
+april_2021_values:
+  water_cold: 883
+  water_hot: 575
+  energy: 6916
+  gas: 1
+  phone: 0
+may_2021_values:
+  water_cold: 890
+  water_hot: 579
+  energy: 7003
+  gas: 1
+  phone: 0
+june_2021_values:
+  water_cold: 896
+  water_hot: 581
+  energy: 7082
+  gas: 1
+  phone: 0
+july_2021_values:
+  water_cold: 903
+  water_hot: 584
+  energy: 7167
+  gas: 1
+  phone: 0
+august_2021_values:
+  water_cold: 909
+  water_hot: 587
+  energy: 7247
+  gas: 1
+  phone: 0
+september_2021_values:
+  water_cold: 913
+  water_hot: 589
+  energy: 7303
+  gas: 1
+  phone: 0
+october_2021_values:
+  water_cold: 918
+  water_hot: 592
+  energy: 7382
+  gas: 1
+  phone: 0
+november_2021_values:
+  water_cold: 924
+  water_hot: 596
+  energy: 7463
+  gas: 1
+  phone: 0
+december_2021_values:
+  water_cold: 929
+  water_hot: 599
+  energy: 7539
+  gas: 1
+  phone: 0
+january_2022_values:
+  water_cold: 934
+  water_hot: 601
+  energy: 7638
+  gas: 1
+  phone: 0

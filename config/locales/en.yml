@@ -1,0 +1,37 @@
+en:
+  test: "This is a test"
+  output_width: 24
+  billing:
+    water_cold:
+      long: "Cold Water"
+      short: "CW"
+    water_hot:
+      long: "Hot Water"
+      short: "HW"
+    energy:
+      long: "Energy"
+      short: "En"
+    gas:
+      long: "Gas"
+      short: "G"
+    phone:
+      long: "Phone"
+      short: "Ph"
+    subtotal:
+      long: "Subtotal"
+      short: "Sub"
+    total:
+      long: "Total"
+      short: "Ttl"
+    payment:
+      long: "Payment"
+      short: "Pay"
+    modifier:
+      long: "Modifier"
+      short: "Mod"
+  ask_to:
+    total_to_pay: "Total to Pay (%{suggested_payment}): "
+    save_to_file:
+      question: "Save to file? (%{legend}): "
+      legend: "y/N"
+      saved_file: "Saved to: "

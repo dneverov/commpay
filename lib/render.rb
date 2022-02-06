@@ -2,23 +2,24 @@ class Render
   MinFloatWidth = 8
 
   def render(billing)
+    puts
     puts "\e[33m#{billing.name.center(OutputWidth)}\e[0m"
     puts hr
 
     billing.billing_params.each do |bp|
-      puts formatted_float(bp.name, bp.total)
+      puts formatted_float( I18n.t(:long, scope: [:billing, bp.name]), bp.total )
     end
 
     puts hr
-    puts formatted_total("Subtotal", billing.subtotal)
-    puts formatted_total("Total", billing.straight_total)
+    puts formatted_total( I18n.t(:long, scope: [:billing, :subtotal]), billing.subtotal )
+    puts formatted_total( I18n.t(:long, scope: [:billing, :total]), billing.straight_total )
     puts formatted_total("", billing.total)
   end
 
   def ask_to_pay(billing)
     suggested_total = suggest_to_pay(billing.total)
     # Ask to Round Total
-    print "Total to Pay (#{suggested_total}): "
+    print I18n.t(:total_to_pay, scope: :ask_to, suggested_payment: suggested_total)
     to_pay = gets.chomp
     to_pay = suggested_total if to_pay.to_i <= 0
     to_pay
@@ -27,21 +28,22 @@ class Render
   def render_to_pay(billing)
     # Move the cursor up N lines: \033[NA
     # Move the cursor forward N columns: \033[NC
-    print "\033[1A\e[33m#{ formatted_total("To Pay", billing.payment) }     \e[0m"
+    print "\033[1A\e[33m#{ formatted_total( I18n.t(:long, scope: [:billing, :payment]), billing.payment ) }     \e[0m"
     puts "\n"
-    puts formatted_total("Mod", billing.next_modifier)
+    puts formatted_total( I18n.t(:long, scope: [:billing, :modifier]), billing.next_modifier )
   end
 
   def ask_to_save_file
     positive_answers = %w(y yes)
-    print "\nSave to file? (y/N): "
+    # print "\nSave to file? (y/N): "
+    print I18n.t(:question, scope: [:ask_to, :save_to_file], legend: I18n.t(:legend, scope: [:ask_to, :save_to_file]))
     save_file = gets.chomp
 
     positive_answers.include?(save_file.downcase)
   end
 
   def render_saved_file(file_name)
-    print "\033[1ASaved file: \e[32m`#{file_name}`\e[0m\n"
+    print "\033[1A#{ I18n.t(:saved_file, scope: [:ask_to, :save_to_file]) } \e[32m`#{file_name}`\e[0m\n"
   end
 
   private

@@ -41,6 +41,27 @@ march_2020_values:
   gas: 1
   phone: 0
 ```
+#### 4. Bundler
+
+If Bundler not installed:
+
+```bash
+gem install bundler
+```
+
+then:
+
+```bash
+bundle install
+```
+
+#### 5. Localization
+In the _lib/config.rb_ file set `I18n.locale` to `:en` | `:ru`.  
+E.g.:
+
+```ruby
+I18n.locale = :ru
+```
 
 ### Run App
 
