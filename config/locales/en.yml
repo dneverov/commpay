@@ -1,6 +1,6 @@
 en:
   test: "This is a test"
-  output_width: 24
+  output_width: 30
   billing:
     water_cold:
       long: "Cold Water"
