@@ -1,5 +1,9 @@
 class Render
+  # Full output width
+  OutputWidth = I18n.t(:output_width, default: 24)
   MinFloatWidth = 8
+  # Show the difference with the previous counters
+  ShowDelta = true
 
   def render(billing)
     puts
