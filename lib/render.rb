@@ -62,6 +62,13 @@ class Render
       "-" * w
     end
 
+    # TODO: Run once
+    # Calculates size for a key cell (E.g. "Cold Water...")
+    def calculate_key_size(cell_widths)
+      cells_sum = cell_widths.values.compact.inject(:+)
+      OutputWidth - cells_sum
+    end
+
     def formatted_float(key, value, options = {:delimeter => "|"})
       # cell widths:
       cw = {
@@ -69,7 +76,7 @@ class Render
         del: 5, # 1+3+1
         val: MinFloatWidth
       }
-      cw[:key] = OutputWidth - (cw[:del] + cw[:val])
+      cw[:key] = calculate_key_size(cw)
       format(" %-#{cw[:key]}s #{options[:delimeter]} %#{cw[:val]}.2f", key, value)
     end
 
@@ -80,7 +87,7 @@ class Render
         dta: 3,
         val: MinFloatWidth
       }
-      cw[:key] = OutputWidth - (cw[:del] + cw[:dta] + cw[:val])
+      cw[:key] = calculate_key_size(cw)
       format(" %-#{cw[:key]}s #{options[:delimeter]} %#{cw[:dta]}d #{options[:delimeter]} %#{cw[:val]}.2f", key, delta, value)
     end
 
