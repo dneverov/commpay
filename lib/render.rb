@@ -3,7 +3,7 @@ class Render
   OutputWidth = I18n.t(:output_width, default: 30)
   MinFloatWidth = 8
   # Show the difference with the previous counters
-  ShowDelta = true
+  ShowDelta = false
 
   def render(billing)
     puts
@@ -63,7 +63,14 @@ class Render
     end
 
     def formatted_float(key, value, options = {:delimeter => "|"})
-      format(" %-#{OutputWidth - MinFloatWidth - 5}s #{options[:delimeter]} %8.2f", key, value)
+      # Table cells widths:
+      cw = {
+        key: nil,
+        del: 5, # 1+3+1
+        val: MinFloatWidth
+      }
+      cw[:key] = OutputWidth - (cw[:del] + cw[:val])
+      format(" %-#{cw[:key]}s #{options[:delimeter]} %#{cw[:val]}.2f", key, value)
     end
 
     def formatted_float_with_delta(key, delta, value, options = {:delimeter => "|"})
