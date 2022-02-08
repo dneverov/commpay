@@ -59,13 +59,13 @@ class Render
     end
 
     def set_total_cell_sizes
+      # TODO: make an Array
       # total cell widths:
       cw = {
         del: 5, # 1+3+1
         val: MinFloatWidth
       }
-      cw[:key] = calculate_key_size(cw)
-      self.total_cell_sizes = cw
+      set_cell_sizes(:total_cell_sizes, cw)
     end
 
     def set_delta_cell_sizes
@@ -75,8 +75,13 @@ class Render
         dta: 3,
         val: MinFloatWidth
       }
-      cw[:key] = calculate_key_size(cw)
-      self.delta_cell_sizes = cw
+      set_cell_sizes(:delta_cell_sizes, cw)
+    end
+
+    # Common setter for: set_total_cell_sizes, set_delta_cell_sizes
+    def set_cell_sizes(attr, sizes)
+      sizes[:key] = calculate_key_size(sizes)
+      self.send "#{attr}=", sizes
     end
 
     def configure_row
