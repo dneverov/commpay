@@ -1,4 +1,5 @@
 class Render
+  attr_accessor :total_cell_sizes, :delta_cell_sizes
   # Full output width
   OutputWidth = I18n.t(:output_width, default: 30)
   MinFloatWidth = 8
@@ -6,6 +7,7 @@ class Render
   ShowDelta = true
 
   def render(billing)
+    configure_row
     puts
     puts "\e[33m#{billing.name.center(OutputWidth)}\e[0m"
     puts hr
@@ -62,7 +64,32 @@ class Render
       "-" * w
     end
 
-    # TODO: Run once
+    def set_total_cell_sizes
+      # total cell widths:
+      cw = {
+        del: 5, # 1+3+1
+        val: MinFloatWidth
+      }
+      cw[:key] = calculate_key_size(cw)
+      self.total_cell_sizes = cw
+    end
+
+    def set_delta_cell_sizes
+      # delta cell widths:
+      cw = {
+        del: 8, # 1+3+3+1
+        dta: 3,
+        val: MinFloatWidth
+      }
+      cw[:key] = calculate_key_size(cw)
+      self.delta_cell_sizes = cw
+    end
+
+    def configure_row
+      set_total_cell_sizes
+      set_delta_cell_sizes if ShowDelta
+    end
+
     # Calculates size for a key cell (E.g. "Cold Water...")
     def calculate_key_size(cell_widths)
       cells_sum = cell_widths.values.compact.inject(:+)
@@ -70,24 +97,12 @@ class Render
     end
 
     def formatted_float(key, value, options = {:delimeter => "|"})
-      # cell widths:
-      cw = {
-        key: nil,
-        del: 5, # 1+3+1
-        val: MinFloatWidth
-      }
-      cw[:key] = calculate_key_size(cw)
+      cw = self.total_cell_sizes
       format(" %-#{cw[:key]}s #{options[:delimeter]} %#{cw[:val]}.2f", key, value)
     end
 
     def formatted_float_with_delta(key, delta, value, options = {:delimeter => "|"})
-      cw = {
-        key: nil,
-        del: 8, # 1+3+3+1
-        dta: 3,
-        val: MinFloatWidth
-      }
-      cw[:key] = calculate_key_size(cw)
+      cw = self.delta_cell_sizes
       format(" %-#{cw[:key]}s #{options[:delimeter]} %#{cw[:dta]}d #{options[:delimeter]} %#{cw[:val]}.2f", key, delta, value)
     end
 
