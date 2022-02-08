@@ -13,13 +13,7 @@ class Render
     puts hr
 
     billing.billing_params.each do |bp|
-      key = I18n.t(:long, scope: [:billing, bp.name])
-      billing_row = if ShowDelta
-        formatted_float_with_delta(key, bp.delta, bp.total)
-      else
-        formatted_float( key, bp.total )
-      end
-      puts billing_row
+      puts billing_params_row(bp)
     end
 
     puts hr
@@ -94,6 +88,15 @@ class Render
     def calculate_key_size(cell_widths)
       cells_sum = cell_widths.values.compact.inject(:+)
       OutputWidth - cells_sum
+    end
+
+    def billing_params_row(billing_params)
+      key = I18n.t(:long, scope: [:billing, billing_params.name])
+      if ShowDelta
+        formatted_float_with_delta(key, billing_params.delta, billing_params.total)
+      else
+        formatted_float( key, billing_params.total )
+      end
     end
 
     def formatted_float(key, value, options = {:delimeter => "|"})
