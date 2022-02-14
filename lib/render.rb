@@ -1,13 +1,19 @@
 class Render
+  attr_accessor :total_cell_sizes, :delta_cell_sizes
+  # Full output width
+  OutputWidth = I18n.t(:output_width, default: 30)
   MinFloatWidth = 8
+  # Show the difference with the previous counters
+  ShowDelta = true
 
   def render(billing)
+    configure_row
     puts
     puts "\e[33m#{billing.name.center(OutputWidth)}\e[0m"
     puts hr
 
     billing.billing_params.each do |bp|
-      puts formatted_float( I18n.t(:long, scope: [:billing, bp.name]), bp.total )
+      puts billing_params_row(bp)
     end
 
     puts hr
@@ -52,8 +58,60 @@ class Render
       "-" * w
     end
 
+    def set_total_cell_sizes
+      # total cell widths:
+      cell_sizes = [
+        5, # 1+3+1 -- paddings and delimeters
+        MinFloatWidth # result value
+      ]
+      set_cell_sizes(:total_cell_sizes, cell_sizes)
+    end
+
+    def set_delta_cell_sizes
+      # delta cell widths:
+      cell_sizes = [
+        8, # 1+3+3+1 -- paddings and delimeters
+        3, # delta
+        MinFloatWidth # result value
+      ]
+      set_cell_sizes(:delta_cell_sizes, cell_sizes)
+    end
+
+    # Common setter for: set_total_cell_sizes, set_delta_cell_sizes
+    def set_cell_sizes(attr, sizes)
+      # Prepend key_cell_size to the front of sizes
+      sizes.unshift calculate_key_size(sizes)
+      self.send "#{attr}=", sizes
+    end
+
+    def configure_row
+      set_total_cell_sizes
+      set_delta_cell_sizes if ShowDelta
+    end
+
+    # Calculates size for a key cell (E.g. "Cold Water...")
+    def calculate_key_size(cell_widths)
+      cells_sum = cell_widths.compact.inject(:+)
+      OutputWidth - cells_sum
+    end
+
+    def billing_params_row(billing_params)
+      key = I18n.t(:long, scope: [:billing, billing_params.name])
+      if ShowDelta
+        formatted_float_with_delta(key, billing_params.delta, billing_params.total)
+      else
+        formatted_float( key, billing_params.total )
+      end
+    end
+
     def formatted_float(key, value, options = {:delimeter => "|"})
-      format(" %-#{OutputWidth - MinFloatWidth - 5}s #{options[:delimeter]} %8.2f", key, value)
+      cw = self.total_cell_sizes
+      format(" %-#{cw[0]}s #{options[:delimeter]} %#{cw[2]}.2f", key, value)
+    end
+
+    def formatted_float_with_delta(key, delta, value, options = {:delimeter => "|"})
+      cw = self.delta_cell_sizes
+      format(" %-#{cw[0]}s #{options[:delimeter]} %#{cw[2]}d #{options[:delimeter]} %#{cw[3]}.2f", key, delta, value)
     end
 
     def formatted_total(key, value)
