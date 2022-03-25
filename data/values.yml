@@ -155,3 +155,9 @@ february_2022_values:
   energy: 7725
   gas: 1
   phone: 0
+march_2022_values:
+  water_cold: 943
+  water_hot: 607
+  energy: 7803
+  gas: 1
+  phone: 0
