@@ -173,3 +173,9 @@ may_2022_values:
   energy: 7964
   gas: 1
   phone: 0
+june_2022_values:
+  water_cold: 959
+  water_hot: 616
+  energy: 8048
+  gas: 1
+  phone: 0
