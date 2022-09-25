@@ -191,3 +191,9 @@ august_2022_values:
   energy: 8190
   gas: 1
   phone: 0
+september_2022_values:
+  water_cold: 975
+  water_hot: 622
+  energy: 8265
+  gas: 1
+  phone: 0
