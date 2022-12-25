@@ -209,3 +209,9 @@ november_2022_values:
   energy: 8432
   gas: 1
   phone: 0
+december_2022_values:
+  water_cold: 992
+  water_hot: 631
+  energy: 8515
+  gas: 1
+  phone: 0
