@@ -33,11 +33,21 @@ require 'i18n'
 
 # August 2022
 
+# Tariffs = {
+#   water_cold: 45.88,
+#   water_hot: 223.04,
+#   energy: 6.17,
+#   gas: 60.18,
+#   phone: 1 #unused
+# }
+
+# January 2023
+
 Tariffs = {
-  water_cold: 45.88,
-  water_hot: 223.04,
-  energy: 6.17,
-  gas: 60.18,
+  water_cold: 50.93,
+  water_hot: 243.16,
+  energy: 6.43,
+  gas: 67.15,
   phone: 1 #unused
 }
 
