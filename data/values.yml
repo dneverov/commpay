@@ -221,3 +221,9 @@ january_2023_values:
   energy: 8606
   gas: 1
   phone: 0
+february_2023_values:
+  water_cold: 1003
+  water_hot: 638
+  energy: 8685
+  gas: 1
+  phone: 0
