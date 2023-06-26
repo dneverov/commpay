@@ -245,3 +245,9 @@ may_2023_values:
   energy: 8925
   gas: 1
   phone: 0
+june_2023_values:
+  water_cold: 1028
+  water_hot: 652
+  energy: 9003
+  gas: 1
+  phone: 0
