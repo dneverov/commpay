@@ -43,10 +43,20 @@ require 'i18n'
 
 # January 2023
 
+# Tariffs = {
+#   water_cold: 50.93,
+#   water_hot: 243.16,
+#   energy: 6.43,
+#   gas: 74.70,
+#   phone: 1 #unused
+# }
+
+# August 2024
+
 Tariffs = {
-  water_cold: 50.93,
-  water_hot: 243.16,
-  energy: 6.43,
+  water_cold: 59.80,
+  water_hot: 272.14,
+  energy: 6.99,
   gas: 74.70,
   phone: 1 #unused
 }
