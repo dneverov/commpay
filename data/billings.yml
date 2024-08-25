@@ -2146,3 +2146,42 @@ july_2024: !ruby/object:Billing
   total: 1359
   payment: 1400
   next_modifier: -41
+august_2024: !ruby/object:Billing
+  created_at: 2024-08-25 14:56:52.350894275 +03:00
+  name: August 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1100
+    delta: 6
+    total: 358.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 693
+    delta: 4
+    total: 1088.56
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10271
+    delta: 105
+    total: 733.95
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 2256.01
+  straight_total: 2215.01
+  total: 2215
+  payment: 2200
+  next_modifier: 15

@@ -329,3 +329,9 @@ july_2024_values:
   energy: 10166
   gas: 1
   phone: 0
+august_2024_values:
+  water_cold: 1100
+  water_hot: 693
+  energy: 10271
+  gas: 1
+  phone: 0
