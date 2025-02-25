@@ -359,3 +359,9 @@ december_2024_values:
   energy: 10744
   gas: 1
   phone: 0
+january_2025_values:
+  water_cold: 1130
+  water_hot: 712
+  energy: 10843
+  gas: 1
+  phone: 0
