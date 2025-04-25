@@ -371,3 +371,9 @@ february_2025_values:
   energy: 10940
   gas: 1
   phone: 0
+march_2025_values:
+  water_cold: 1141
+  water_hot: 719
+  energy: 11041
+  gas: 1
+  phone: 0
