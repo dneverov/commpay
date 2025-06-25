@@ -1,0 +1,2539 @@
+---
+january_2020_apr: !ruby/object:Billing
+  created_at: 2020-04-06 02:04:51.377267143 +03:00
+  name: january_2020_apr
+  modifier: -39
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 794
+    delta: 5
+    total: 202.4
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 536
+    delta: 3
+    total: 594.57
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 5546
+    delta: 105
+    total: 574.35
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1428.01
+  straight_total: 1389.01
+  total: 1389
+  payment: 1400
+  next_modifier: -11
+february_2020_apr: !ruby/object:Billing
+  created_at: 2020-04-06 01:59:08.279446171 +03:00
+  name: february_2020_apr
+  modifier: -11
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 799
+    delta: 5
+    total: 202.4
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 539
+    delta: 3
+    total: 594.57
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 5649
+    delta: 103
+    total: 563.41
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1417.07
+  straight_total: 1406.07
+  total: 1406
+  payment: 1400
+  next_modifier: 6
+march_2020: !ruby/object:Billing
+  created_at: 2020-04-25 11:55:54.474808745 +03:00
+  name: march_2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 805
+    delta: 6
+    total: 242.88
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 542
+    delta: 3
+    total: 594.57
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 5740
+    delta: 91
+    total: 497.77
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1391.91
+  straight_total: 1397.91
+  total: 1398
+  payment: 1400
+  next_modifier: -2
+april_2020: !ruby/object:Billing
+  created_at: 2020-04-25 11:58:42.428287231 +03:00
+  name: April 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 810
+    delta: 5
+    total: 202.4
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 545
+    delta: 3
+    total: 594.57
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 5832
+    delta: 92
+    total: 503.24
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1356.9
+  straight_total: 1354.9
+  total: 1355
+  payment: 1400
+  next_modifier: -45
+may_2020: !ruby/object:Billing
+  created_at: 2020-05-25 14:03:42.432339300 +03:00
+  name: May 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 815
+    delta: 5
+    total: 202.4
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 547
+    delta: 2
+    total: 396.38
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 5918
+    delta: 86
+    total: 470.42
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1125.89
+  straight_total: 1080.89
+  total: 1081
+  payment: 1100
+  next_modifier: -19
+june_2020: !ruby/object:Billing
+  created_at: 2020-06-24 15:16:45.066584748 +03:00
+  name: June 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 821
+    delta: 6
+    total: 242.88
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 549
+    delta: 2
+    total: 396.38
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 6010
+    delta: 92
+    total: 503.24
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1199.19
+  straight_total: 1180.19
+  total: 1180
+  payment: 1200
+  next_modifier: -20
+july_2020: !ruby/object:Billing
+  created_at: 2020-07-27 23:30:32.038327016 +03:00
+  name: July 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 40.48
+    value: 826
+    delta: 5
+    total: 202.4
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 198.19
+    value: 550
+    delta: 1
+    total: 198.19
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.47
+    value: 6100
+    delta: 90
+    total: 492.3
+  - !ruby/object:Param
+    name: :gas
+    tariff: 56.69
+    value: 1
+    delta: 1
+    total: 56.69
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 949.58
+  straight_total: 929.58
+  total: 930
+  payment: 900
+  next_modifier: 30
+august_2020: !ruby/object:Billing
+  created_at: 2020-08-25 01:00:56.525130052 +03:00
+  name: August 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 831
+    delta: 5
+    total: 211.5
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 552
+    delta: 2
+    total: 410.3
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6196
+    delta: 96
+    total: 543.36
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1223.59
+  straight_total: 1253.59
+  total: 1254
+  payment: 1250
+  next_modifier: 4
+september_2020: !ruby/object:Billing
+  created_at: 2020-09-29 16:36:04.314009303 +03:00
+  name: September 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 837
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 555
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6279
+    delta: 83
+    total: 469.78
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1397.46
+  straight_total: 1401.46
+  total: 1401
+  payment: 1400
+  next_modifier: 1
+october_2020: !ruby/object:Billing
+  created_at: 2020-10-26 00:19:38.158700308 +03:00
+  name: October 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 846
+    delta: 9
+    total: 380.7
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 558
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6364
+    delta: 85
+    total: 481.1
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1535.68
+  straight_total: 1536.68
+  total: 1537
+  payment: 1550
+  next_modifier: -13
+november_2020: !ruby/object:Billing
+  created_at: 2020-11-25 10:28:40.740781150 +03:00
+  name: November 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 855
+    delta: 9
+    total: 380.7
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 561
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6459
+    delta: 95
+    total: 537.7
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1592.28
+  straight_total: 1579.28
+  total: 1579
+  payment: 1600
+  next_modifier: -21
+december_2020: !ruby/object:Billing
+  created_at: 2020-12-26 01:52:04.590416759 +03:00
+  name: December 2020
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 860
+    delta: 5
+    total: 211.5
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 564
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6549
+    delta: 90
+    total: 509.4
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1394.78
+  straight_total: 1373.78
+  total: 1374
+  payment: 1400
+  next_modifier: -26
+january_2021: !ruby/object:Billing
+  created_at: 2021-01-24 20:28:07.877428288 +03:00
+  name: January 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 866
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 566
+    delta: 2
+    total: 410.3
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6651
+    delta: 102
+    total: 577.32
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1299.85
+  straight_total: 1273.85
+  total: 1274
+  payment: 1300
+  next_modifier: -26
+february_2021: !ruby/object:Billing
+  created_at: 2021-02-24 23:43:17.727269854 +03:00
+  name: February 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 872
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 569
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6746
+    delta: 95
+    total: 537.7
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1465.38
+  straight_total: 1439.38
+  total: 1439
+  payment: 1400
+  next_modifier: 39
+march_2021: !ruby/object:Billing
+  created_at: 2021-03-25 00:37:58.433500474 +03:00
+  name: March 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 878
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 572
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6834
+    delta: 88
+    total: 498.08
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1425.76
+  straight_total: 1464.76
+  total: 1465
+  payment: 1500
+  next_modifier: -35
+april_2021: !ruby/object:Billing
+  created_at: 2021-04-24 12:45:43.092548859 +03:00
+  name: April 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 883
+    delta: 5
+    total: 211.5
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 575
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 6916
+    delta: 82
+    total: 464.12
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1349.5
+  straight_total: 1314.5
+  total: 1315
+  payment: 1300
+  next_modifier: 15
+may_2021: !ruby/object:Billing
+  created_at: 2021-05-27 18:31:02.840837442 +03:00
+  name: May 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 890
+    delta: 7
+    total: 296.1
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 579
+    delta: 4
+    total: 820.6
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 7003
+    delta: 87
+    total: 492.42
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1667.55
+  straight_total: 1682.55
+  total: 1683
+  payment: 1670
+  next_modifier: 13
+june_2021: !ruby/object:Billing
+  created_at: 2021-06-27 00:15:38.555910860 +03:00
+  name: June 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 896
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 581
+    delta: 2
+    total: 410.3
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 7082
+    delta: 79
+    total: 447.14
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1169.67
+  straight_total: 1182.67
+  total: 1183
+  payment: 1200
+  next_modifier: -17
+july_2021: !ruby/object:Billing
+  created_at: 2021-07-27 02:44:02.930530465 +03:00
+  name: July 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 903
+    delta: 7
+    total: 296.1
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 584
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 7167
+    delta: 85
+    total: 481.1
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1451.08
+  straight_total: 1434.08
+  total: 1434
+  payment: 1400
+  next_modifier: -940
+august_2021: !ruby/object:Billing
+  created_at: 2021-08-26 11:11:20.209174981 +03:00
+  name: August 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 42.3
+    value: 909
+    delta: 6
+    total: 253.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 205.15
+    value: 587
+    delta: 3
+    total: 615.45
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.66
+    value: 7247
+    delta: 80
+    total: 452.8
+  - !ruby/object:Param
+    name: :gas
+    tariff: 58.43
+    value: 1
+    delta: 1
+    total: 58.43
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1380.48
+  straight_total: 440.48
+  total: 440
+  payment: 500
+  next_modifier: -60
+september_2021: !ruby/object:Billing
+  created_at: 2021-09-29 12:35:07.511294405 +03:00
+  name: September 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 913
+    delta: 4
+    total: 174.28
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 589
+    delta: 2
+    total: 423.34
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7303
+    delta: 56
+    total: 331.52
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 989.32
+  straight_total: 929.32
+  total: 929
+  payment: 900
+  next_modifier: 29
+october_2021: !ruby/object:Billing
+  created_at: 2021-10-25 10:53:40.383325833 +03:00
+  name: October 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 918
+    delta: 5
+    total: 217.85
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 592
+    delta: 3
+    total: 635.01
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7382
+    delta: 79
+    total: 467.68
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1380.72
+  straight_total: 1409.72
+  total: 1410
+  payment: 1400
+  next_modifier: 10
+november_2021: !ruby/object:Billing
+  created_at: 2021-11-26 02:15:08.098616022 +03:00
+  name: November 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 924
+    delta: 6
+    total: 261.42
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 596
+    delta: 4
+    total: 846.68
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7463
+    delta: 81
+    total: 479.52
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1647.8
+  straight_total: 1657.8
+  total: 1658
+  payment: 1700
+  next_modifier: -42
+december_2021: !ruby/object:Billing
+  created_at: 2021-12-25 01:26:47.226310355 +03:00
+  name: December 2021
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 929
+    delta: 5
+    total: 217.85
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 599
+    delta: 3
+    total: 635.01
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7539
+    delta: 76
+    total: 449.92
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1362.96
+  straight_total: 1320.96
+  total: 1321
+  payment: 1300
+  next_modifier: 21
+january_2022: !ruby/object:Billing
+  created_at: 2022-01-25 02:39:24.610894473 +03:00
+  name: January 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 934
+    delta: 5
+    total: 217.85
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 601
+    delta: 2
+    total: 423.34
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7638
+    delta: 99
+    total: 586.08
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1287.45
+  straight_total: 1308.45
+  total: 1308
+  payment: 1300
+  next_modifier: 8
+february_2022: !ruby/object:Billing
+  created_at: 2022-02-26 02:58:08.831255492 +03:00
+  name: February 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 939
+    delta: 5
+    total: 217.85
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 604
+    delta: 3
+    total: 635.01
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7725
+    delta: 87
+    total: 515.04
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1428.08
+  straight_total: 1436.08
+  total: 1436
+  payment: 1400
+  next_modifier: 36
+march_2022: !ruby/object:Billing
+  created_at: 2022-03-25 12:19:37.198406255 +03:00
+  name: March 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 943
+    delta: 4
+    total: 174.28
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 607
+    delta: 3
+    total: 635.01
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7803
+    delta: 78
+    total: 461.76
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1331.23
+  straight_total: 1367.23
+  total: 1367
+  payment: 1400
+  next_modifier: -33
+april_2022: !ruby/object:Billing
+  created_at: 2022-04-25 16:59:50.115438951 +03:00
+  name: April 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 948
+    delta: 5
+    total: 217.85
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 610
+    delta: 3
+    total: 635.01
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7884
+    delta: 81
+    total: 479.52
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1392.56
+  straight_total: 1359.56
+  total: 1360
+  payment: 1400
+  next_modifier: -40
+may_2022: !ruby/object:Billing
+  created_at: 2022-05-26 14:16:41.106804635 +03:00
+  name: May 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 953
+    delta: 5
+    total: 217.85
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 613
+    delta: 3
+    total: 635.01
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 7964
+    delta: 80
+    total: 473.6
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1386.64
+  straight_total: 1346.64
+  total: 1347
+  payment: 1350
+  next_modifier: -3
+june_2022: !ruby/object:Billing
+  created_at: 2022-06-26 11:38:16.412293815 +03:00
+  name: June 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 959
+    delta: 6
+    total: 261.42
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 616
+    delta: 3
+    total: 635.01
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 8048
+    delta: 84
+    total: 497.28
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1453.89
+  straight_total: 1450.89
+  total: 1451
+  payment: 1450
+  next_modifier: 1
+july_2022: !ruby/object:Billing
+  created_at: 2022-07-26 13:12:12.352902678 +03:00
+  name: July 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 43.57
+    value: 965
+    delta: 6
+    total: 261.42
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 211.67
+    value: 617
+    delta: 1
+    total: 211.67
+  - !ruby/object:Param
+    name: :energy
+    tariff: 5.92
+    value: 8121
+    delta: 73
+    total: 432.16
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 965.43
+  straight_total: 966.43
+  total: 966
+  payment: 1000
+  next_modifier: -34
+august_2022: !ruby/object:Billing
+  created_at: 2022-08-25 16:38:06.530606885 +03:00
+  name: August 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 45.88
+    value: 969
+    delta: 4
+    total: 183.52
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 223.04
+    value: 619
+    delta: 2
+    total: 446.08
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.17
+    value: 8190
+    delta: 69
+    total: 425.73
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1115.51
+  straight_total: 1081.51
+  total: 1082
+  payment: 1100
+  next_modifier: -18
+september_2022: !ruby/object:Billing
+  created_at: 2022-09-25 14:57:08.658749548 +03:00
+  name: September 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 45.88
+    value: 975
+    delta: 6
+    total: 275.28
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 223.04
+    value: 622
+    delta: 3
+    total: 669.12
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.17
+    value: 8265
+    delta: 75
+    total: 462.75
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1467.33
+  straight_total: 1449.33
+  total: 1449
+  payment: 1450
+  next_modifier: -1
+october_2022: !ruby/object:Billing
+  created_at: 2022-10-25 13:06:50.982527137 +03:00
+  name: October 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 45.88
+    value: 981
+    delta: 6
+    total: 275.28
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 223.04
+    value: 625
+    delta: 3
+    total: 669.12
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.17
+    value: 8350
+    delta: 85
+    total: 524.45
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1529.03
+  straight_total: 1528.03
+  total: 1528
+  payment: 1550
+  next_modifier: -22
+november_2022: !ruby/object:Billing
+  created_at: 2022-11-25 13:51:53.382851447 +03:00
+  name: November 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 45.88
+    value: 987
+    delta: 6
+    total: 275.28
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 223.04
+    value: 628
+    delta: 3
+    total: 669.12
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.17
+    value: 8432
+    delta: 82
+    total: 505.94
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1510.52
+  straight_total: 1488.52
+  total: 1489
+  payment: 1500
+  next_modifier: -11
+december_2022: !ruby/object:Billing
+  created_at: 2022-12-25 20:46:06.777072827 +03:00
+  name: December 2022
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 45.88
+    value: 992
+    delta: 5
+    total: 229.4
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 223.04
+    value: 631
+    delta: 3
+    total: 669.12
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.17
+    value: 8515
+    delta: 83
+    total: 512.11
+  - !ruby/object:Param
+    name: :gas
+    tariff: 60.18
+    value: 1
+    delta: 1
+    total: 60.18
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1470.81
+  straight_total: 1459.81
+  total: 1460
+  payment: 1500
+  next_modifier: -40
+january_2023: !ruby/object:Billing
+  created_at: 2023-01-26 12:56:34.057972930 +03:00
+  name: January 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 998
+    delta: 6
+    total: 305.58
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 635
+    delta: 4
+    total: 972.64
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 8606
+    delta: 91
+    total: 585.13
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1930.5
+  straight_total: 1890.5
+  total: 1891
+  payment: 1900
+  next_modifier: -9
+february_2023: !ruby/object:Billing
+  created_at: 2023-02-25 14:54:32.780018553 +03:00
+  name: February 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1003
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 638
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 8685
+    delta: 79
+    total: 507.97
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1559.25
+  straight_total: 1550.25
+  total: 1550
+  payment: 1600
+  next_modifier: -50
+march_2023: !ruby/object:Billing
+  created_at: 2023-03-24 21:19:45.952825857 +03:00
+  name: March 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1008
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 642
+    delta: 4
+    total: 972.64
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 8762
+    delta: 77
+    total: 495.11
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1789.55
+  straight_total: 1739.55
+  total: 1740
+  payment: 1700
+  next_modifier: 40
+april_2023: !ruby/object:Billing
+  created_at: 2023-04-25 19:09:31.875698512 +03:00
+  name: April 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1015
+    delta: 7
+    total: 356.51
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 645
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 8852
+    delta: 90
+    total: 578.7
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1731.84
+  straight_total: 1771.84
+  total: 1772
+  payment: 1800
+  next_modifier: -28
+may_2023: !ruby/object:Billing
+  created_at: 2023-05-25 17:28:54.038726642 +03:00
+  name: May 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1021
+    delta: 6
+    total: 305.58
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 649
+    delta: 4
+    total: 972.64
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 8925
+    delta: 73
+    total: 469.39
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1814.76
+  straight_total: 1786.76
+  total: 1787
+  payment: 1800
+  next_modifier: -13
+june_2023: !ruby/object:Billing
+  created_at: 2023-06-26 23:19:33.379111366 +03:00
+  name: June 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1028
+    delta: 7
+    total: 356.51
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 652
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9003
+    delta: 78
+    total: 501.54
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1654.68
+  straight_total: 1641.68
+  total: 1642
+  payment: 1650
+  next_modifier: -8
+july_2023: !ruby/object:Billing
+  created_at: 2023-07-26 12:47:06.291081160 +03:00
+  name: July 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1033
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 654
+    delta: 2
+    total: 486.32
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9066
+    delta: 63
+    total: 405.09
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1213.21
+  straight_total: 1205.21
+  total: 1205
+  payment: 1200
+  next_modifier: 5
+august_2023: !ruby/object:Billing
+  created_at: 2023-08-25 19:04:47.302770894 +03:00
+  name: August 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1038
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 657
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9137
+    delta: 71
+    total: 456.53
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1507.81
+  straight_total: 1512.81
+  total: 1513
+  payment: 1500
+  next_modifier: 13
+september_2023: !ruby/object:Billing
+  created_at: 2023-09-25 19:13:22.963798696 +03:00
+  name: September 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1043
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 660
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9211
+    delta: 74
+    total: 475.82
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1527.1
+  straight_total: 1540.1
+  total: 1540
+  payment: 1550
+  next_modifier: -10
+october_2023: !ruby/object:Billing
+  created_at: 2023-10-25 17:48:42.824508617 +03:00
+  name: October 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1049
+    delta: 6
+    total: 305.58
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 663
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9291
+    delta: 80
+    total: 514.4
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1616.61
+  straight_total: 1606.61
+  total: 1607
+  payment: 1600
+  next_modifier: 7
+november_2023: !ruby/object:Billing
+  created_at: 2023-11-25 19:49:03.686925245 +03:00
+  name: November 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1054
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 667
+    delta: 4
+    total: 972.64
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9377
+    delta: 86
+    total: 552.98
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1847.42
+  straight_total: 1854.42
+  total: 1854
+  payment: 1900
+  next_modifier: -46
+december_2023: !ruby/object:Billing
+  created_at: 2023-12-25 14:09:24.290398428 +03:00
+  name: December 2023
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1060
+    delta: 6
+    total: 305.58
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 670
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9466
+    delta: 89
+    total: 572.27
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1674.48
+  straight_total: 1628.48
+  total: 1628
+  payment: 1600
+  next_modifier: 28
+january_2024: !ruby/object:Billing
+  created_at: 2024-01-25 13:25:29.120702048 +03:00
+  name: January 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1064
+    delta: 4
+    total: 203.72
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 673
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9563
+    delta: 97
+    total: 623.71
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1624.06
+  straight_total: 1652.06
+  total: 1652
+  payment: 1700
+  next_modifier: -48
+february_2024: !ruby/object:Billing
+  created_at: 2024-02-25 13:22:08.722873028 +03:00
+  name: February 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1069
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 676
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9659
+    delta: 96
+    total: 617.28
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1668.56
+  straight_total: 1620.56
+  total: 1621
+  payment: 1600
+  next_modifier: 21
+march_2024: !ruby/object:Billing
+  created_at: 2024-03-25 18:50:31.103929649 +03:00
+  name: March 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1073
+    delta: 4
+    total: 203.72
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 678
+    delta: 2
+    total: 486.32
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9756
+    delta: 97
+    total: 623.71
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1380.9
+  straight_total: 1401.9
+  total: 1402
+  payment: 1400
+  next_modifier: 2
+april_2024: !ruby/object:Billing
+  created_at: 2024-04-25 16:10:33.013690868 +03:00
+  name: April 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1078
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 681
+    delta: 3
+    total: 729.48
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9878
+    delta: 122
+    total: 784.46
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1835.74
+  straight_total: 1837.74
+  total: 1838
+  payment: 1800
+  next_modifier: 38
+may_2024: !ruby/object:Billing
+  created_at: 2024-05-24 18:01:32.234159556 +03:00
+  name: May 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1083
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 685
+    delta: 4
+    total: 972.64
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 9984
+    delta: 106
+    total: 681.58
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1976.02
+  straight_total: 2014.02
+  total: 2014
+  payment: 2000
+  next_modifier: 14
+june_2024: !ruby/object:Billing
+  created_at: 2024-06-25 11:35:37.941311916 +03:00
+  name: June 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1089
+    delta: 6
+    total: 305.58
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 687
+    delta: 2
+    total: 486.32
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 10077
+    delta: 93
+    total: 597.99
+  - !ruby/object:Param
+    name: :gas
+    tariff: 67.15
+    value: 1
+    delta: 1
+    total: 67.15
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1457.04
+  straight_total: 1471.04
+  total: 1471
+  payment: 1500
+  next_modifier: -29
+july_2024: !ruby/object:Billing
+  created_at: 2024-07-24 17:15:36.643605396 +03:00
+  name: July 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 50.93
+    value: 1094
+    delta: 5
+    total: 254.65
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 243.16
+    value: 689
+    delta: 2
+    total: 486.32
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.43
+    value: 10166
+    delta: 89
+    total: 572.27
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1387.94
+  straight_total: 1358.94
+  total: 1359
+  payment: 1400
+  next_modifier: -41
+august_2024: !ruby/object:Billing
+  created_at: 2024-08-25 14:56:52.350894275 +03:00
+  name: August 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1100
+    delta: 6
+    total: 358.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 693
+    delta: 4
+    total: 1088.56
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10271
+    delta: 105
+    total: 733.95
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 2256.01
+  straight_total: 2215.01
+  total: 2215
+  payment: 2200
+  next_modifier: 15
+september_2024: !ruby/object:Billing
+  created_at: 2024-09-24 18:11:16.405261048 +03:00
+  name: September 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1104
+    delta: 4
+    total: 239.2
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 695
+    delta: 2
+    total: 544.28
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10341
+    delta: 70
+    total: 489.3
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1347.48
+  straight_total: 1362.48
+  total: 1362
+  payment: 1400
+  next_modifier: -38
+october_2024: !ruby/object:Billing
+  created_at: 2024-10-25 13:18:30.115490580 +03:00
+  name: October 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1111
+    delta: 7
+    total: 418.6
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 699
+    delta: 4
+    total: 1088.56
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10439
+    delta: 98
+    total: 685.02
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 2266.88
+  straight_total: 2228.88
+  total: 2229
+  payment: 2200
+  next_modifier: 29
+november_2024: !ruby/object:Billing
+  created_at: 2024-11-25 18:28:50.775948773 +03:00
+  name: November 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1117
+    delta: 6
+    total: 358.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 703
+    delta: 4
+    total: 1088.56
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10543
+    delta: 104
+    total: 726.96
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 2249.02
+  straight_total: 2278.02
+  total: 2278
+  payment: 2300
+  next_modifier: -22
+december_2024: !ruby/object:Billing
+  created_at: 2024-12-24 15:07:24.227585347 +03:00
+  name: December 2024
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1122
+    delta: 5
+    total: 299.0
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 706
+    delta: 3
+    total: 816.42
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10637
+    delta: 94
+    total: 657.06
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1847.18
+  straight_total: 1825.18
+  total: 1825
+  payment: 1800
+  next_modifier: 25
+january_2025: !ruby/object:Billing
+  created_at: 2025-01-25 15:12:04.626743046 +03:00
+  name: January 2025
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1126
+    delta: 4
+    total: 239.2
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 709
+    delta: 3
+    total: 816.42
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10744
+    delta: 107
+    total: 747.93
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1878.25
+  straight_total: 1903.25
+  total: 1903
+  payment: 1900
+  next_modifier: 3
+february_2025: !ruby/object:Billing
+  created_at: 2025-02-25 18:33:43.174785982 +03:00
+  name: February 2025
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1130
+    delta: 4
+    total: 239.2
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 712
+    delta: 3
+    total: 816.42
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10843
+    delta: 99
+    total: 692.01
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1822.33
+  straight_total: 1825.33
+  total: 1825
+  payment: 1800
+  next_modifier: 25
+march_2025: !ruby/object:Billing
+  created_at: 2025-03-25 17:13:08.256702479 +03:00
+  name: March 2025
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1135
+    delta: 5
+    total: 299.0
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 715
+    delta: 3
+    total: 816.42
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 10940
+    delta: 97
+    total: 678.03
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1868.15
+  straight_total: 1893.15
+  total: 1893
+  payment: 1900
+  next_modifier: -7
+april_2025: !ruby/object:Billing
+  created_at: 2025-04-25 19:39:31.907121108 +03:00
+  name: April 2025
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1141
+    delta: 6
+    total: 358.8
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 719
+    delta: 4
+    total: 1088.56
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 11041
+    delta: 101
+    total: 705.99
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 2228.05
+  straight_total: 2221.05
+  total: 2221
+  payment: 2200
+  next_modifier: 21
+may_2025: !ruby/object:Billing
+  created_at: 2025-05-25 19:31:42.339138423 +03:00
+  name: May 2025
+  billing_params:
+  - !ruby/object:Param
+    name: :water_cold
+    tariff: 59.8
+    value: 1146
+    delta: 5
+    total: 299.0
+  - !ruby/object:Param
+    name: :water_hot
+    tariff: 272.14
+    value: 721
+    delta: 2
+    total: 544.28
+  - !ruby/object:Param
+    name: :energy
+    tariff: 6.99
+    value: 11144
+    delta: 103
+    total: 719.97
+  - !ruby/object:Param
+    name: :gas
+    tariff: 74.7
+    value: 1
+    delta: 1
+    total: 74.7
+  - !ruby/object:Param
+    name: :phone
+    tariff: 1
+    value: 0
+    delta: 0
+    total: 0.0
+  subtotal: 1637.95
+  straight_total: 1658.95
+  total: 1659
+  payment: 1700
+  next_modifier: -41
+# В мае заменет счетчик горячей воды. Отчет идет с 0 (с нуля).

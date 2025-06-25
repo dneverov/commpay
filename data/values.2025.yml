@@ -1,0 +1,385 @@
+---
+dummy_january_2020_values:
+  water_cold: 794
+  water_hot: 536
+  energy: 5546
+  gas: 1
+  phone: 0
+dummy_february_2020_values:
+  water_cold: 799
+  water_hot: 539
+  energy: 5649
+  gas: 1
+  phone: 0
+march_2020_values:
+  water_cold: 805
+  water_hot: 542
+  energy: 5740
+  gas: 1
+  phone: 0
+april_2020_values:
+  water_cold: 810
+  water_hot: 545
+  energy: 5832
+  gas: 1
+  phone: 0
+may_2020_values:
+  water_cold: 815
+  water_hot: 547
+  energy: 5918
+  gas: 1
+  phone: 0
+june_2020_values:
+  water_cold: 821
+  water_hot: 549
+  energy: 6010
+  gas: 1
+  phone: 0
+july_2020_values:
+  water_cold: 826
+  water_hot: 550
+  energy: 6100
+  gas: 1
+  phone: 0
+august_2020_values:
+  water_cold: 831
+  water_hot: 552
+  energy: 6196
+  gas: 1
+  phone: 0
+september_2020_values:
+  water_cold: 837
+  water_hot: 555
+  energy: 6279
+  gas: 1
+  phone: 0
+october_2020_values:
+  water_cold: 846
+  water_hot: 558
+  energy: 6364
+  gas: 1
+  phone: 0
+november_2020_values:
+  water_cold: 855
+  water_hot: 561
+  energy: 6459
+  gas: 1
+  phone: 0
+december_2020_values:
+  water_cold: 860
+  water_hot: 564
+  energy: 6549
+  gas: 1
+  phone: 0
+january_2021_values:
+  water_cold: 866
+  water_hot: 566
+  energy: 6651
+  gas: 1
+  phone: 0
+february_2021_values:
+  water_cold: 872
+  water_hot: 569
+  energy: 6746
+  gas: 1
+  phone: 0
+march_2021_values:
+  water_cold: 878
+  water_hot: 572
+  energy: 6834
+  gas: 1
+  phone: 0
+april_2021_values:
+  water_cold: 883
+  water_hot: 575
+  energy: 6916
+  gas: 1
+  phone: 0
+may_2021_values:
+  water_cold: 890
+  water_hot: 579
+  energy: 7003
+  gas: 1
+  phone: 0
+june_2021_values:
+  water_cold: 896
+  water_hot: 581
+  energy: 7082
+  gas: 1
+  phone: 0
+july_2021_values:
+  water_cold: 903
+  water_hot: 584
+  energy: 7167
+  gas: 1
+  phone: 0
+august_2021_values:
+  water_cold: 909
+  water_hot: 587
+  energy: 7247
+  gas: 1
+  phone: 0
+september_2021_values:
+  water_cold: 913
+  water_hot: 589
+  energy: 7303
+  gas: 1
+  phone: 0
+october_2021_values:
+  water_cold: 918
+  water_hot: 592
+  energy: 7382
+  gas: 1
+  phone: 0
+november_2021_values:
+  water_cold: 924
+  water_hot: 596
+  energy: 7463
+  gas: 1
+  phone: 0
+december_2021_values:
+  water_cold: 929
+  water_hot: 599
+  energy: 7539
+  gas: 1
+  phone: 0
+january_2022_values:
+  water_cold: 934
+  water_hot: 601
+  energy: 7638
+  gas: 1
+  phone: 0
+february_2022_values:
+  water_cold: 939
+  water_hot: 604
+  energy: 7725
+  gas: 1
+  phone: 0
+march_2022_values:
+  water_cold: 943
+  water_hot: 607
+  energy: 7803
+  gas: 1
+  phone: 0
+april_2022_values:
+  water_cold: 948
+  water_hot: 610
+  energy: 7884
+  gas: 1
+  phone: 0
+may_2022_values:
+  water_cold: 953
+  water_hot: 613
+  energy: 7964
+  gas: 1
+  phone: 0
+june_2022_values:
+  water_cold: 959
+  water_hot: 616
+  energy: 8048
+  gas: 1
+  phone: 0
+july_2022_values:
+  water_cold: 965
+  water_hot: 617
+  energy: 8121
+  gas: 1
+  phone: 0
+august_2022_values:
+  water_cold: 969
+  water_hot: 619
+  energy: 8190
+  gas: 1
+  phone: 0
+september_2022_values:
+  water_cold: 975
+  water_hot: 622
+  energy: 8265
+  gas: 1
+  phone: 0
+october_2022_values:
+  water_cold: 981
+  water_hot: 625
+  energy: 8350
+  gas: 1
+  phone: 0
+november_2022_values:
+  water_cold: 987
+  water_hot: 628
+  energy: 8432
+  gas: 1
+  phone: 0
+december_2022_values:
+  water_cold: 992
+  water_hot: 631
+  energy: 8515
+  gas: 1
+  phone: 0
+january_2023_values:
+  water_cold: 998
+  water_hot: 635
+  energy: 8606
+  gas: 1
+  phone: 0
+february_2023_values:
+  water_cold: 1003
+  water_hot: 638
+  energy: 8685
+  gas: 1
+  phone: 0
+march_2023_values:
+  water_cold: 1008
+  water_hot: 642
+  energy: 8762
+  gas: 1
+  phone: 0
+april_2023_values:
+  water_cold: 1015
+  water_hot: 645
+  energy: 8852
+  gas: 1
+  phone: 0
+may_2023_values:
+  water_cold: 1021
+  water_hot: 649
+  energy: 8925
+  gas: 1
+  phone: 0
+june_2023_values:
+  water_cold: 1028
+  water_hot: 652
+  energy: 9003
+  gas: 1
+  phone: 0
+july_2023_values:
+  water_cold: 1033
+  water_hot: 654
+  energy: 9066
+  gas: 1
+  phone: 0
+august_2023_values:
+  water_cold: 1038
+  water_hot: 657
+  energy: 9137
+  gas: 1
+  phone: 0
+september_2023_values:
+  water_cold: 1043
+  water_hot: 660
+  energy: 9211
+  gas: 1
+  phone: 0
+october_2023_values:
+  water_cold: 1049
+  water_hot: 663
+  energy: 9291
+  gas: 1
+  phone: 0
+november_2023_values:
+  water_cold: 1054
+  water_hot: 667
+  energy: 9377
+  gas: 1
+  phone: 0
+december_2023_values:
+  water_cold: 1060
+  water_hot: 670
+  energy: 9466
+  gas: 1
+  phone: 0
+january_2024_values:
+  water_cold: 1064
+  water_hot: 673
+  energy: 9563
+  gas: 1
+  phone: 0
+february_2024_values:
+  water_cold: 1069
+  water_hot: 676
+  energy: 9659
+  gas: 1
+  phone: 0
+march_2024_values:
+  water_cold: 1073
+  water_hot: 678
+  energy: 9756
+  gas: 1
+  phone: 0
+april_2024_values:
+  water_cold: 1078
+  water_hot: 681
+  energy: 9878
+  gas: 1
+  phone: 0
+may_2024_values:
+  water_cold: 1083
+  water_hot: 685
+  energy: 9984
+  gas: 1
+  phone: 0
+june_2024_values:
+  water_cold: 1089
+  water_hot: 687
+  energy: 10077
+  gas: 1
+  phone: 0
+july_2024_values:
+  water_cold: 1094
+  water_hot: 689
+  energy: 10166
+  gas: 1
+  phone: 0
+august_2024_values:
+  water_cold: 1100
+  water_hot: 693
+  energy: 10271
+  gas: 1
+  phone: 0
+september_2024_values:
+  water_cold: 1111
+  water_hot: 699
+  energy: 10439
+  gas: 1
+  phone: 0
+october_2024_values:
+  water_cold: 1117
+  water_hot: 703
+  energy: 10543
+  gas: 1
+  phone: 0
+november_2024_values:
+  water_cold: 1122
+  water_hot: 706
+  energy: 10637
+  gas: 1
+  phone: 0
+december_2024_values:
+  water_cold: 1126
+  water_hot: 709
+  energy: 10744
+  gas: 1
+  phone: 0
+january_2025_values:
+  water_cold: 1130
+  water_hot: 712
+  energy: 10843
+  gas: 1
+  phone: 0
+february_2025_values:
+  water_cold: 1135
+  water_hot: 715
+  energy: 10940
+  gas: 1
+  phone: 0
+march_2025_values:
+  water_cold: 1141
+  water_hot: 719
+  energy: 11041
+  gas: 1
+  phone: 0
+april_2025_values:
+  water_cold: 1146
+  water_hot: 721
+  energy: 11144
+  gas: 1
+  phone: 0
