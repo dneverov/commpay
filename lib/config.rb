@@ -57,7 +57,7 @@ Tariffs = {
   water_cold: 59.80,
   water_hot: 272.14,
   energy: 6.99,
-  gas: 74.70,
+  gas: 80.59,
   phone: 1 #unused
 }
 
