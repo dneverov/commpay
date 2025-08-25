@@ -53,10 +53,20 @@ require 'i18n'
 
 # August 2024
 
+# Tariffs = {
+#   water_cold: 59.80,
+#   water_hot: 272.14,
+#   energy: 6.99,
+#   gas: 80.59,
+#   phone: 1 #unused
+# }
+
+# August 2025
+
 Tariffs = {
-  water_cold: 59.80,
-  water_hot: 272.14,
-  energy: 6.99,
+  water_cold: 65.77,
+  water_hot: 312.5,
+  energy: 7.87, # нет платёжки. надо будет проверить
   gas: 80.59,
   phone: 1 #unused
 }
