@@ -35,3 +35,9 @@ august_2025_values:
   energy: 11481
   gas: 1
   phone: 0
+september_2025_values:
+  water_cold: 1170
+  water_hot: 16
+  energy: 11597
+  gas: 1
+  phone: 0
