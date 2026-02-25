@@ -73,10 +73,20 @@ require 'i18n'
 
 # January 2026 (from December 2025)
 
+# Tariffs = {
+#   water_cold: 65.77,
+#   water_hot: 312.5,
+#   energy: 7.87,
+#   gas: 82.00,
+#   phone: 1 #unused
+# }
+
+# February 2026
+
 Tariffs = {
-  water_cold: 65.77,
-  water_hot: 312.5,
-  energy: 7.87,
+  water_cold: 66.87,
+  water_hot: 317.71,
+  energy: 8,
   gas: 82.00,
   phone: 1 #unused
 }
