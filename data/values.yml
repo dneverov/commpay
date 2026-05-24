@@ -77,3 +77,9 @@ march_2026_values:
   energy: 12382
   gas: 1
   phone: 0
+april_2026_values:
+  water_cold: 1206
+  water_hot: 41
+  energy: 12506
+  gas: 1
+  phone: 0
