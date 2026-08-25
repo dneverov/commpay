@@ -95,3 +95,9 @@ june_2026_values:
   energy: 12738
   gas: 1
   phone: 0
+july_2026_values:
+  water_cold: 1218
+  water_hot: 47
+  energy: 12821
+  gas: 1
+  phone: 0
