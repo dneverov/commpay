@@ -99,11 +99,20 @@ require 'i18n'
 # - Поэтому новый тариф (11.01 => 91.38, перерасчет -2.73, итого: 88.65).
 # P.S. В Ноябре придут платёжки за Октябрь уже по новым тарифам.
 
+# Tariffs = {
+#   water_cold: 66.87,
+#   water_hot: 317.71,
+#   energy: 8,
+#   gas: 88.65,
+#   phone: 1 #unused
+# }
+
+# November 2026
 Tariffs = {
-  water_cold: 66.87,
-  water_hot: 317.71,
-  energy: 8,
-  gas: 88.65,
+  water_cold: 73.79,
+  water_hot: 377.8,
+  energy: 8.9,
+  gas: 91.38,
   phone: 1 #unused
 }
 
