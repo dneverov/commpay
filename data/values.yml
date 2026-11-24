@@ -113,3 +113,9 @@ september_2026_values:
   energy: 13022
   gas: 1
   phone: 0
+october_2026_values:
+  water_cold: 1231
+  water_hot: 53
+  energy: 13131
+  gas: 1
+  phone: 0
